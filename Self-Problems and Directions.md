@@ -16,20 +16,19 @@ Self-Problems
 
 Habbit Formation
 ---
-Paperweekly | Morning
+Views | Morning
 ------------|----------
+books and write md | Morning
 julyedu Data Science Practice | Morning
-Check and write csdn blogs and markdowns | Morning
+Check and write github blogs and plans | Morning
 leetcode |Evening
-Books | Evening
-Videos | Evening
-train models |Night
+videos | Evening (***+++***)
+projects |Night
 
-Temp Plan
+Tmp Plan
 ---
 Make more time for code, algorithm, information
 Make a paper
-Change or a better job
 
 NLP application scenarios
 ---
@@ -38,7 +37,7 @@ NLP application scenarios
 + QA
 + (N)MT
 
-Temp Theory Directions
+Tmp Theory Directions
 ---
 * DRL4NLP
 * DRL4ContralSystem
@@ -48,3 +47,8 @@ Key Points
 ---
 * Algorithm first
 * Build Knowledge Tree
+
+Projects
+---
+* QA-DEV
+* RL-Demo
