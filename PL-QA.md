@@ -3,8 +3,13 @@
 	+ https://zhuanlan.zhihu.com/p/33124445
 + NarrativeQA	
 
+
 ## Dataset
 + SQuAD
+	+ news
+		+ 这个竞赛基于SQuAD问答数据集，考察两个指标：EM和F1。
+		EM是指精确匹配，也就是模型给出的答案与标准答案一模一样；F1，是根据模型给出的答案和标准答案之间的重合度计算出来的，也就是结合了召回率和精确率。
+		目前阿里、微软团队并列第一，其中EM得分微软（r-net+融合模型）更高，F1得分阿里（SLQA+融合模型）更高。但是他们在EM成绩上都击败了“人类表现”
 	+ EMNLP2016 SQuAD:100,000+ Questions for Machine Comprehension of Text
 		+ https://arxiv.org/pdf/1606.05250.pdf
 	+ SQuAD，斯坦福在自然语言处理的野心
