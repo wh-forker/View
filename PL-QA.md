@@ -1,4 +1,8 @@
 # PL-QA
++ Reference links:
+	+ https://zhuanlan.zhihu.com/p/33124445
++ NarrativeQA	
+
 ## Dataset
 + SQuAD
 	+ EMNLP2016 SQuAD:100,000+ Questions for Machine Comprehension of Text
