@@ -1,7 +1,9 @@
 # Plan
 + ## Target
   + QA-System
-  + RL-Demo
+    + Text Retrieval
+    + Text Comprehension
+  + RL-Demo
   + DataEngine
   + Change
   + Projects
