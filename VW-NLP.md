@@ -34,6 +34,24 @@
   			- AOG 的全称叫 AND-OR graph，是一种语法模型（grammer model）。在人工智能的发展历程中，大体有两种解决办法：一种是自底向上，即目前非常流形的深度神经网络方法，另一种方法是自顶向下，语法模型可以认为是一种自顶向下的方法。
   			- 把语法模型和深度神经网络模型结合起来，设计的模型同时兼顾特征的 exploration and exploitation（探索和利用），并在网络的深度和宽度上保持平衡；
     			- 设计的网络结构，在分类任务和目标检测任务上，都比基于残差结构的方法要好。
+	- DRL4NLP
+		- https://github.com/ganeshjawahar/drl4nlp.scratchpad
+		- Policy Gradients
+			- buck_arxiv17: Ask the Right Questions: Active Question Reformulation with Reinforcement Learning [arXiv]
+			- dhingra_acl17: Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access [arXiv] [code]
+			- paulus_arxiv17: A Deep Reinforced Model for Abstractive Summarization [arXiv]
+			- nogueira_arxiv17: Task-Oriented Query Reformulation with Reinforcement Learning [arXiv] [code]
+			- li_iclr17: Dialog Learning with Human-in-the-loop [arXiv] [code]
+			- li_iclr17_2: Learning through dialogue interactions by asking questions [arXiv] [code]
+			- yogatama_iclr17: Learning to Compose Words into Sentences with Reinforcement Learning [arXiv]
+			- dinu_nips16w: Reinforcement Learning for Transition-Based Mention Detection [arXiv]
+			- clark_emnlp16: Deep Reinforcement Learning for Mention-Ranking Coreference models [arXiv] [code]
+		- Value Function
+			- narasimhan_emnlp16: Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning [arXiv] [code]
+		- Misc
+			- bordes_iclr17: Learning End-to-End Goal-Oriented Dialog [arXiv]
+			- weston_nips16: Dialog-based Language Learning [arXiv] [code]
+			- nogueira_nips16: End-to-End Goal-Driven Web Navigation [arXiv] [code]
 	- ## NMT
 		- Machine Translation Using Semantic Web Technologies: A Survey
   			- 本文是一篇综述文章，用知识图谱来解决机器翻译问题。
