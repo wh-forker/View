@@ -10,6 +10,7 @@
 	
 - # Papers
 	- ## Attention
+		- Attention is all you need
 		- Hierarchical Attention Networks for Document Classification
 			- Attention mechanism layer which reduces RNN/Bi-RNN outputs with Attention vector.
 	- ## Dialog System
