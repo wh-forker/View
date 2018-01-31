@@ -73,7 +73,23 @@
 			- 《Aspect Level Sentiment Classification with Deep Memory Network》阅读笔记
 		- Attention-based LSTM for Aspect-level Sentiment Classification
 			- 《Attention-based LSTM for Aspect-level Sentiment Classification》阅读笔记
-	
+	- ## Transfer 
+		- Fast.ai推出NLP最新迁移学习方法「微调语言模型」，可将误差减少超过20%！
+			- Fine-tuned Language Models for Text Classification
+	- ## QA
+		- 12 papers to understand QA system with Deep Learning
+			- http://blog.csdn.net/abcjennifer/article/details/51232645
+	- Emeddding
+		- sentence
+			- Supervised Learning of Universal Sentence Representations from Natural Language Inference Data
+				- 本文来自 Facebook AI Research。本文研究监督句子嵌入，作者研究并对比了几类常见的网络架构（LSTM，GRU，BiLSTM，BiLSTM with self attention 和 Hierachical CNN）, 5 类架构具很强的代表性。
+				- 论文链接：https://www.paperweekly.site/papers/1332
+				- 代码链接：https://github.com/facebookresearch/InferSent
+			- Multilingual Hierarchical Attention Networks for Document Classification
+				- 本文使用两个神经网络分别建模句子和文档，采用一种自下向上的基于向量的文本表示模型。	首先使用 CNN/LSTM 来建模句子表示，接下来使用双向 GRU 模型对句子表示进行编码得到文档表示。
+				- 论文链接：https://www.paperweekly.site/papers/1152
+				- 代码链接：https://github.com/idiap/mhan
+---
 	- 2017年值得读的NLP论文
 		- Attention is all you need
 		- Reinforcement Learning for Relation Classification from Noisy Data
@@ -85,18 +101,6 @@
 		- Joint Extraction Entities and Relations Based on a Noval Tagging Scheme
 		- A Structured Self-Attentive Sentence Embedding
 		- Dialogue Learning with Human-in-the-loop
-	- Fast.ai推出NLP最新迁移学习方法「微调语言模型」，可将误差减少超过20%！
-		- Fine-tuned Language Models for Text Classification
-	- 12 papers to understand QA system with Deep Learning
-		- http://blog.csdn.net/abcjennifer/article/details/51232645
-	- Supervised Learning of Universal Sentence Representations from Natural Language Inference Data
-		- 本文来自 Facebook AI Research。本文研究监督句子嵌入，作者研究并对比了几类常见的网络架构（LSTM，GRU，BiLSTM，BiLSTM with self attention 和 Hierachical CNN）, 5 类架构具很强的代表性。
-		- 论文链接：https://www.paperweekly.site/papers/1332
-		- 代码链接：https://github.com/facebookresearch/InferSent
-	- Multilingual Hierarchical Attention Networks for Document Classification
-		- 本文使用两个神经网络分别建模句子和文档，采用一种自下向上的基于向量的文本表示模型。	首先使用 CNN/LSTM 来建模句子表示，接下来使用双向 GRU 模型对句子表示进行编码得到文档表示。
-		- 论文链接：https://www.paperweekly.site/papers/1152
-		- 代码链接：https://github.com/idiap/mhan
 	- Neural CRF
 		- http://nlp.cs.berkeley.edu/pubs/Durrett-Klein_2015_NeuralCRF_paper.pd
 	- ABCNN: Attention-Based Convolutional Neural Network for Modeling Sentence Pairs
