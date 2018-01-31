@@ -1,10 +1,4 @@
 # Plan
 + ## Target
-  + QA-System
-    + Text Retrieval
-    + Text Comprehension
-  + RL-Demo
-  + DataEngine
-  + Change
-  + Projects
-  + Knowledge
+  + View : Record the information encountered
+  + Plan : Make plan to improve knowledge base
