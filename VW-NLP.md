@@ -1,4 +1,4 @@
-## NLP
+## View-NLP
 - # Tasks
 	- pos tagging, word segmentation, NER
 	- semantic analysis, machine translate
