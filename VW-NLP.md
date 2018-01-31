@@ -9,49 +9,13 @@
 	- short text similarity
 	
 - # Papers
-	- ## Grammer Model
-		- Deep AND-OR Grammar Networks for Visual Recognition
-  			- AOG 的全称叫 AND-OR graph，是一种语法模型（grammer model）。在人工智能的发展历程中，大体有两种解决办法：一种是自底向上，即目前非常流形的深度神经网络方法，另一种方法是自顶向下，语法模型可以认为是一种自顶向下的方法。
-  			- 把语法模型和深度神经网络模型结合起来，设计的模型同时兼顾特征的 exploration and exploitation（探索和利用），并在网络的深度和宽度上保持平衡；
-    			- 设计的网络结构，在分类任务和目标检测任务上，都比基于残差结构的方法要好。
+	- ## Attention
+		- Hierarchical Attention Networks for Document Classification
+			- Attention mechanism layer which reduces RNN/Bi-RNN outputs with Attention vector.
 	- ## Dialog System
 		- End-to-End Optimization of Task-Oriented Dialogue Model with Deep Reinforcement Learning
   			- 一篇基于强化学习的端到端对话系统研究工作，来自 CMU 和 Google。
   			- 论文链接：http://www.paperweekly.site/papers/1257
-	- ## Attention
-		- Hierarchical Attention Networks for Document Classification
-			- Attention mechanism layer which reduces RNN/Bi-RNN outputs with Attention vector.
-	- ## Text Clf
-		- Hierarchical Attention Networks for Document Classification
-			- Learning Structured Representation for Text Classification via Reinforcement Learning
-  			- 将强化学习应用于文本分类任务中，已被 AAAI2018录用。作者团队在上期 PhD Talk 中对本文做过在线解读。
-    			- 实录回顾：清华大学冯珺：基于强化学习的关系抽取和文本分类**
-    			- 论文链接：http://www.paperweekly.site/papers/1261
-	- ## Short Text Expand
-		- End-to-end Learning for Short Text Expansion
-  			- 本文第一次用了 end to end 模型来做 short text expansion 这个 task，方法上用了 memory network 来提升性能，在多个数据集上证明了方法的效果；Short text expansion 对很多问题都有帮助，所以这篇 paper 解决的问题是有意义的。
-    			- 通过在多个数据集上的实验证明了 model 的可靠性，设计的方法非常直观，很 intuitive。
-    			- 论文链接：https://www.paperweekly.site/papers/1313
-	- ## Text Generation
-		- Adversarial Ranking for Language Generation
-  			- 本文提出了一种 RankGAN 模型，来解决如何生成高质量文本的问题。
-  			- 论文链接：https://www.paperweekly.site/papers/1290
-		- Neural Text Generation: A Practical Guide
-  			- 本文是一篇 Practical Guide，讲了很多用端到端方法来做文本生成问题时的细节问题和技巧，值得一看。
-	- ## NMT
-		- Machine Translation Using Semantic Web Technologies: A Survey
-  			- 本文是一篇综述文章，用知识图谱来解决机器翻译问题。
-  			- 论文链接：http://www.paperweekly.site/papers/1229
-	- ## Senmentic
-		- Recurrent Neural Networks for Semantic Instance Segmentation
-  			- 本项目提出了一个基于 RNN 的语义实例分割模型，为图像中的每个目标顺序地生成一对 mask 及其对应的类概率。该模型是可端对端 + 可训练的，不需要对输出进行任何后处理，因此相比其他依靠 object proposal 的方法更为简单。
-  			- 论文链接：https://www.paperweekly.site/papers/1355**
-  			- 代码链接：https://github.com/facebookresearch/InferSent
-	- ## Relation Extract
-		- Reinforcement Learning for Relation Classification from Noisy Data**
-  			- 将强度学习应用于关系抽取任务中，取得了不错的效果。本文已被 AAAI2018 录用。作者团队在上期 PhD Talk 中对本文做过在线解读。
-    			- 实录回顾：清华大学冯珺：基于强化学习的关系抽取和文本分类**
-    			- 论文链接：http://www.paperweekly.site/papers/1260
 	- ## Document Represent(文档表示)
 		- DisSent: Sentence Representation Learning from Explicit Discourse Relations
   			- 借助文档中一些特殊的词训练句子 embedding。使用文档中 but、because、although 等词，以及其前后或关联的句子构成语义模型。也就是，使用这些词和句子的关系，约束了句子向量的生成空间（使用句子向量，预测关联词），从而达到训练句子向量目的。
@@ -65,6 +29,33 @@
   			- 本文来自 Facebook AI Research。本文研究监督句子嵌入，作者研究并对比了几类常见的网络架构（LSTM，GRU，BiLSTM，BiLSTM with self attention 和 Hierachical CNN）, 5 类架构具很强的代表性。
   			- 论文链接：https://www.paperweekly.site/papers/1332**
   			- 代码链接：https://github.com/facebookresearch/InferSent**
+	- ## Grammer Model
+		- Deep AND-OR Grammar Networks for Visual Recognition
+  			- AOG 的全称叫 AND-OR graph，是一种语法模型（grammer model）。在人工智能的发展历程中，大体有两种解决办法：一种是自底向上，即目前非常流形的深度神经网络方法，另一种方法是自顶向下，语法模型可以认为是一种自顶向下的方法。
+  			- 把语法模型和深度神经网络模型结合起来，设计的模型同时兼顾特征的 exploration and exploitation（探索和利用），并在网络的深度和宽度上保持平衡；
+    			- 设计的网络结构，在分类任务和目标检测任务上，都比基于残差结构的方法要好。
+	- ## NMT
+		- Machine Translation Using Semantic Web Technologies: A Survey
+  			- 本文是一篇综述文章，用知识图谱来解决机器翻译问题。
+  			- 论文链接：http://www.paperweekly.site/papers/1229
+	- ## QA
+		- 12 papers to understand QA system with Deep Learning
+			- http://blog.csdn.net/abcjennifer/article/details/51232645
+	- ## Relation Extract
+		- Reinforcement Learning for Relation Classification from Noisy Data**
+  			- 将强度学习应用于关系抽取任务中，取得了不错的效果。本文已被 AAAI2018 录用。作者团队在上期 PhD Talk 中对本文做过在线解读。
+    			- 实录回顾：清华大学冯珺：基于强化学习的关系抽取和文本分类**
+    			- 论文链接：http://www.paperweekly.site/papers/1260
+	- ## Senmentic
+		- Recurrent Neural Networks for Semantic Instance Segmentation
+  			- 本项目提出了一个基于 RNN 的语义实例分割模型，为图像中的每个目标顺序地生成一对 mask 及其对应的类概率。该模型是可端对端 + 可训练的，不需要对输出进行任何后处理，因此相比其他依靠 object proposal 的方法更为简单。
+  			- 论文链接：https://www.paperweekly.site/papers/1355**
+  			- 代码链接：https://github.com/facebookresearch/InferSent
+	- ## Short Text Expand
+		- End-to-end Learning for Short Text Expansion
+  			- 本文第一次用了 end to end 模型来做 short text expansion 这个 task，方法上用了 memory network 来提升性能，在多个数据集上证明了方法的效果；Short text expansion 对很多问题都有帮助，所以这篇 paper 解决的问题是有意义的。
+    			- 通过在多个数据集上的实验证明了 model 的可靠性，设计的方法非常直观，很 intuitive。
+    			- 论文链接：https://www.paperweekly.site/papers/1313
 	- ## Sentiment
 		- Benchmarking Multimodal Sentiment Analysis
   			- 多模态情感分析目前还有很多难点，该文提出了一个基于 CNN 的多模态融合框架，融合表情，语音，文本等信息做情感分析，情绪识别。
@@ -73,22 +64,23 @@
 			- 《Aspect Level Sentiment Classification with Deep Memory Network》阅读笔记
 		- Attention-based LSTM for Aspect-level Sentiment Classification
 			- 《Attention-based LSTM for Aspect-level Sentiment Classification》阅读笔记
+	- ## Text Clf
+		- Hierarchical Attention Networks for Document Classification
+			- Learning Structured Representation for Text Classification via Reinforcement Learning
+  			- 将强化学习应用于文本分类任务中，已被 AAAI2018录用。作者团队在上期 PhD Talk 中对本文做过在线解读。
+    			- 实录回顾：清华大学冯珺：基于强化学习的关系抽取和文本分类**
+    			- 论文链接：http://www.paperweekly.site/papers/1261
+	- ## Text Generation
+		- Adversarial Ranking for Language Generation
+  			- 本文提出了一种 RankGAN 模型，来解决如何生成高质量文本的问题。
+  			- 论文链接：https://www.paperweekly.site/papers/1290
+		- Neural Text Generation: A Practical Guide
+  			- 本文是一篇 Practical Guide，讲了很多用端到端方法来做文本生成问题时的细节问题和技巧，值得一看。
 	- ## Transfer 
 		- Fast.ai推出NLP最新迁移学习方法「微调语言模型」，可将误差减少超过20%！
 			- Fine-tuned Language Models for Text Classification
-	- ## QA
-		- 12 papers to understand QA system with Deep Learning
-			- http://blog.csdn.net/abcjennifer/article/details/51232645
-	- Emeddding
-		- sentence
-			- Supervised Learning of Universal Sentence Representations from Natural Language Inference Data
-				- 本文来自 Facebook AI Research。本文研究监督句子嵌入，作者研究并对比了几类常见的网络架构（LSTM，GRU，BiLSTM，BiLSTM with self attention 和 Hierachical CNN）, 5 类架构具很强的代表性。
-				- 论文链接：https://www.paperweekly.site/papers/1332
-				- 代码链接：https://github.com/facebookresearch/InferSent
-			- Multilingual Hierarchical Attention Networks for Document Classification
-				- 本文使用两个神经网络分别建模句子和文档，采用一种自下向上的基于向量的文本表示模型。	首先使用 CNN/LSTM 来建模句子表示，接下来使用双向 GRU 模型对句子表示进行编码得到文档表示。
-				- 论文链接：https://www.paperweekly.site/papers/1152
-				- 代码链接：https://github.com/idiap/mhan
+
+
 ---
 	- 2017年值得读的NLP论文
 		- Attention is all you need
