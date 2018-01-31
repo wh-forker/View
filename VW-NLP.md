@@ -1,21 +1,39 @@
-##NLP
-- Fast.ai推出NLP最新迁移学习方法「微调语言模型」，可将误差减少超过20%！
-	- Fine-tuned Language Models for Text Classification
+## NLP
+- # Papers
+	- 2017年值得读的NLP论文
+		- Attention is all you need
+		- Reinforcement Learning for Relation Classification from Noisy Data
+		- Convolutional Sequence to Sequence Learning
+		- Zero-Shot **Relation Extraction** via **Reading Comprehension**
+		- IRGAN:A Minimax Game for Unifying Generative and Discriminative Information Retrieval Models
+		- Neural Relation Extraction with Selective Attention over Instances
+		- Unsupervised Neural Machine Translation
+		- Joint Extraction Entities and Relations Based on a Noval Tagging Scheme
+		- A Structured Self-Attentive Sentence Embedding
+		- Dialogue Learning with Human-in-the-loop
+	- Fast.ai推出NLP最新迁移学习方法「微调语言模型」，可将误差减少超过20%！
+		- Fine-tuned Language Models for Text Classification
+	- 12 papers to understand QA system with Deep Learning
+		- http://blog.csdn.net/abcjennifer/article/details/51232645
+	- Neural CRF
+		- http://nlp.cs.berkeley.edu/pubs/Durrett-Klein_2015_NeuralCRF_paper.pd
+- # Tools
+	- MUSE
+  	- 多语言词向量 Python 库
+  	- 由 Facebook 开源的多语言词向量 Python 库，提供了基于 fastText 实现的多语言词向量和大规模高质量的双语词典，包括无监督和有监督两种。其中有监督方法使用双语词典或相同的字符串，无监督的方法不使用任何并行数据。
+  	-	无监督方法具体可参考 Word Translation without Parallel Data 这篇论文。
+  	- 论文链接：https://www.paperweekly.site/papers/1097
+  	- 项目链接：https://github.com/facebookresearch/MUSE
+	- FoolNLTK
+  	- 中文处理工具包
+  	- 本项目特点：
+    	- 可能不是最快的开源中文分词，但很可能是最准的开源中文分词
+    	- 基于 BiLSTM 模型训练而成
+    	- 包含分词，词性标注，实体识别，都有比较高的准确率
+    	- 用户自定义词典
+  	- 项目链接：https://github.com/rockyzhengwu/FoolNLTK 
 
-- FoolNLTK
-  - 中文处理工具包
-  - 本项目特点：
-    - 可能不是最快的开源中文分词，但很可能是最准的开源中文分词
-    - 基于 BiLSTM 模型训练而成
-    - 包含分词，词性标注，实体识别，都有比较高的准确率
-    - 用户自定义词典
-  - 项目链接：https://github.com/rockyzhengwu/FoolNLTK
-- MUSE
-  - 多语言词向量 Python 库
-  - 由 Facebook 开源的多语言词向量 Python 库，提供了基于 fastText 实现的多语言词向量和大规模高质量的双语词典，包括无监督和有监督两种。其中有监督方法使用双语词典或相同的字符串，无监督的方法不使用任何并行数据。
-  - 无监督方法具体可参考 Word Translation without Parallel Data 这篇论文。
-  - 论文链接：https://www.paperweekly.site/papers/1097
-  - 项目链接：https://github.com/facebookresearch/MUSE
+---
 
 - Supervised Learning of Universal Sentence Representations from Natural Language Inference Data
   + 本文来自 Facebook AI Research。本文研究监督句子嵌入，作者研究并对比了几类常见的网络架构（LSTM，GRU，BiLSTM，BiLSTM with self attention 和 Hierachical CNN）, 5 类架构具很强的代表性。
@@ -188,10 +206,7 @@ aspect level情感分析相关工作
     The idea was proposed in the article by Z. Yang et al., "Hierarchical Attention Networks for Document Classification", 2016: http://www.aclweb.org/anthology/N16-1174.
   - http://www.cnblogs.com/robert-dlut/p/5952032.html
     - Attention机制最早是在视觉图像领域提出来的，应该是在九几年思想就提出来了，但是真正火起来应该算是google mind团队的这篇论文《Recurrent Models of Visual Attention》[14]，他们在RNN模型上使用了attention机制来进行图像分类。随后，Bahdanau等人在论文《Neural Machine Translation by Jointly Learning to Align and Translate》 [1]中，使用类似attention的机制在机器翻译任务上将翻译和对齐同时进行，他们的工作算是是第一个提出attention机制应用到NLP领域中。接着类似的基于attention机制的RNN模型扩展开始应用到各种NLP任务中。最近，如何在CNN中使用attention机制也成为了大家的研究热点。下图表示了attention研究进展的大概趋势。
-- 12 papers to understand QA system with Deep Learning
-  - http://blog.csdn.net/abcjennifer/article/details/51232645
-- Neural CRF
-  - http://nlp.cs.berkeley.edu/pubs/Durrett-Klein_2015_NeuralCRF_paper.pd
+
 
 ---
 
