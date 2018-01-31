@@ -1,5 +1,5 @@
 ## NLP
-- # Task 
+- # Tasks
   - pos tagging, word segmentation, NER
   - semantic analysis, machine translate
 	- machine reading comprehension
