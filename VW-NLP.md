@@ -1,7 +1,7 @@
 ## NLP
 - # Tasks
-  - pos tagging, word segmentation, NER
-  - semantic analysis, machine translate
+	- pos tagging, word segmentation, NER
+	- semantic analysis, machine translate
 	- machine reading comprehension
 	- QA system
 	- (NLG)natural language generation
@@ -100,48 +100,49 @@
 	- Neural CRF
 		- http://nlp.cs.berkeley.edu/pubs/Durrett-Klein_2015_NeuralCRF_paper.pd
 	- ABCNN: Attention-Based Convolutional Neural Network for Modeling Sentence Pairs
-  	- 第一种方法ABCNN0-1是在卷积前进行attention，通过attention矩阵计算出相应句对的attention feature map，然后连同原来的feature map一起输入到卷积层
-  	- 第二种方法ABCNN-2是在池化时进行attention，通过attention对卷积后的表达重新加权，然后再进行池化
-  	- 第三种就是把前两种方法一起用到CNN中
+		- 第一种方法ABCNN0-1是在卷积前进行attention，通过attention矩阵计算出相应句对的attention feature map，然后连同原来的feature map一起输入到卷积层
+		- 第二种方法ABCNN-2是在池化时进行attention，通过attention对卷积后的表达重新加权，然后再进行池化
+		- 第三种就是把前两种方法一起用到CNN中
 
 
 - # projects
 	- MAgent
-    - MAgent is a research platform for many-agent reinforcement learning. Unlike previous research platforms that focus on reinforcement learning research with a single agent or only few agents, MAgent aims at supporting reinforcement learning research that scales up from hundreds to millions of agents.
-    - AAAI 2018 demo paper: MAgent: A Many-Agent Reinforcement Learning Platform for Artificial Collective Intelligence
+    	- MAgent is a research platform for many-agent reinforcement learning. Unlike previous research platforms that focus on reinforcement learning research with a single agent or only few agents, MAgent aims at supporting reinforcement learning research that scales up from hundreds to millions of agents.
+    	- AAAI 2018 demo paper: MAgent: A Many-Agent Reinforcement Learning Platform for Artificial Collective Intelligence
+
 
 - # Tools
 	- AllenNLP
-  - ParlAI
-  - OpenNMT
+	- ParlAI
+	- OpenNMT
 	- MUSE
   	- 多语言词向量 Python 库
-  	- 由 Facebook 开源的多语言词向量 Python 库，提供了基于 fastText 实现的多语言词向量和大规模高质量的双语词典，包括无监督和有监督两种。其中有监督方法使用双语词典或相同的字符串，无监督的方法不使用任何并行数据。
-  	-	无监督方法具体可参考 Word Translation without Parallel Data 这篇论文。
-  	- 论文链接：https://www.paperweekly.site/papers/1097
-  	- 项目链接：https://github.com/facebookresearch/MUSE
+  		- 由 Facebook 开源的多语言词向量 Python 库，提供了基于 fastText 实现的多语言词向量和大规模高质量的双语词典，包括无监督和有监督两种。其中有监督方法使用双语词典或相同的字符串，无监督的方法不使用任何并行数据。
+  		- 无监督方法具体可参考 Word Translation without Parallel Data 这篇论文。
+  		- 论文链接：https://www.paperweekly.site/papers/1097
+  		- 项目链接：https://github.com/facebookresearch/MUSE
 	- FoolNLTK
-  	- 中文处理工具包
-  	- 本项目特点：
-    	- 可能不是最快的开源中文分词，但很可能是最准的开源中文分词
-    	- 基于 BiLSTM 模型训练而成
-    	- 包含分词，词性标注，实体识别，都有比较高的准确率
-    	- 用户自定义词典
-  	- 项目链接：https://github.com/rockyzhengwu/FoolNLTK 
+  		- 中文处理工具包
+  		- 特点：
+    		- 可能不是最快的开源中文分词，但很可能是最准的开源中文分词
+    		- 基于 BiLSTM 模型训练而成
+    		- 包含分词，词性标注，实体识别，都有比较高的准确率
+    		- 用户自定义词典
+  		- 项目链接：https://github.com/rockyzhengwu/FoolNLTK 
 	- skorch
-  	- 兼容 Scikit-Learn 的 PyTorch 神经网络库
+  		- 兼容 Scikit-Learn 的 PyTorch 神经网络库
 	- FlashText
-  	- 关键字替换和抽取
+  		- 关键字替换和抽取
 	- MatchZoo 
-  	- MatchZoo is a toolkit for text matching. It was developed to facilitate the designing, comparing, and sharing of deep text matching models.
+  		- MatchZoo is a toolkit for text matching. It was developed to facilitate the designing, comparing, and sharing of deep text matching models.
 	- Sockeye: A Toolkit for Neural Machine Translation
-  	- 一个开源的产品级神经机器翻译框架，构建在 MXNet 平台上。
-  	- 论文链接：https://www.paperweekly.site/papers/1374**
-  	- 代码链接：https://github.com/awslabs/sockeye**
+  		- 一个开源的产品级神经机器翻译框架，构建在 MXNet 平台上。
+  		- 论文链接：https://www.paperweekly.site/papers/1374**
+  		- 代码链接：https://github.com/awslabs/sockeye**
 
 - # Others
-  - 一文概述2017年深度学习NLP重大进展与趋势
-    - http://www.qingpingshan.com/bc/jsp/361202.html
+	- 一文概述2017年深度学习NLP重大进展与趋势
+    	- http://www.qingpingshan.com/bc/jsp/361202.html
 
 - # ViewPoints
 - ## VP1:https://www.wxwenku.com/d/100329482
@@ -150,4 +151,4 @@
 	- 深度学习的不可解释的特性和对于数据的需求，也使得它尚未在要求更高的任务上取得突破，比如对话系统（虽然对话在 2016 年随着 Echo 的成功已经被炒得火热）
 	- 在大多数端到端的 NLP 应用中，在输入中包括一些语言学的特征（例如 pos tag 或 dependency tree）并不会对结果有重大影响。我们的一些粗浅的猜测，是因为目前的 NLP 做的这些特征，其实对于语义的表示都还比较差，某种程度来说所含信息还不如 word embedding 来的多
 	- 关于阅读理解（Open-domain QA）
-      - 幸好 Stanford 的 Chen Danqi 大神的 Reading Wikipedia to Answer Open-Domain Questions 打开了很多的方向。通过海量阅读（「machine reading at scale」），这篇文章试图回答所有在 wikipedia 上出现的 factoid 问题。其中有大量的工程细节，在此不表，仅致敬意。
+		- 幸好 Stanford 的 Chen Danqi 大神的 Reading Wikipedia to Answer Open-Domain Questions 打开了很多的方向。通过海量阅读（「machine reading at scale」），这篇文章试图回答所有在 wikipedia 上出现的 factoid 问题。其中有大量的工程细节，在此不表，仅致敬意。
