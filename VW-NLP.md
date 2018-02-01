@@ -1,13 +1,16 @@
 ## View-NLP
 - # Tasks
-	- pos tagging, word segmentation, NER
-	- semantic analysis, machine translate
+	- pos tagging
+	- word segmentation
+	- NER
+	- semantic analysis
+	- machine translate
 	- machine reading comprehension
 	- QA system
 	- (NLG)natural language generation
 	- short text expansion
 	- short text similarity
-	
+	- coreference resolution (指代消解)
 - # Papers
 	- ## Attention
 		- Attention is all you need
