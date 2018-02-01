@@ -1,3 +1,5 @@
+- A Survey of Word Embeddings Evaluation Methods
+	- https://arxiv.org/abs/1801.09536
 - Structural Deep Network Embedding
 	- A 
  	- SDNE 是清华大学崔鹏老师组发表在 2016KDD 上的一个工作，目前谷歌学术引用量已经达到了 85，是一篇基于深度模型对网络进行嵌入的方法。
