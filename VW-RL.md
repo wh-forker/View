@@ -28,6 +28,8 @@
 		- 项目链接：https://github.com/Breakend/gym-extensions
 
 - ## Game Demo
+	- PyTorch Implementation of Deep Q-Learning with Experience Replay in Atari Game Environments, as made public by Google DeepMind
+		- https://github.com/diegoalejogm/deep-q-learning
 	- 重现DeepMind星际争霸强化学习算法
 			- https://zhuanlan.zhihu.com/p/29246185
 	- 迈向通用人工智能：星际争霸2人工智能研究环境SC2LE完全入门指南
