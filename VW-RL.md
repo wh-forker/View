@@ -1,6 +1,8 @@
 # View-RL
 - ## Un Clf
 	- http://geek.ai/
+- ## papers
+	- Gorila DeepMind 2015
 - ## Demo
 	- 《A Tour of Gotchas When Implementing Deep Q Networks with Keras and OpenAi Gym》by Scott Rome O网页链接 
 	- 【层次增强学习算法】《Learning a Hierarchy | OpenAI》 O网页链接 ref:《Meta Learning Shared Hierarchies》(2017) GitHub: https ://github .com/openai/mlsh
