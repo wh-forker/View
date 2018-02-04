@@ -9,8 +9,43 @@
 	+ 本篇 SIGIR2017 的满分论文则首次提出将两方面流派的数据模型通过一种对抗训练的方式统一在一起，使得两方面的模型能够相互提高，最终使得检索到的文档更加精准。文章的实验分别在网络搜索、推荐系统以及问答系统三个应用场景中实现并验证了结果的有效性。
 ---
 # Dataset
-+ 三分熟博士生の阅读理解与问答数据集 | 论文集精选 #03
-	+ https://zhuanlan.zhihu.com/p/30308726
++ ## NarrativeQA
+    + Deepmind 最新阅读理解数据集 NarrativeQA ，让机器挑战更复杂阅读理解问题
+        + https://www.leiphone.com/news/201712/mjCYZ8WTiREqja6L.html
+        + https://github.com/deepmind/narrativeqa
+        + DeepMind认为目前的阅读理解数据集均存在着一定的局限性，包括：数据集小、不自然、只需要一句话定位回答的必须信息，等等。因而 Deepmind 认为，在这些数据集上的测试可能都是一个不能真实反映机器阅读理解能力的伪命题。
+
+    + The NarrativeQA Reading Comprehension Challenge
+        + 由 DeepMind 发布的全新机器阅读理解数据集 NarrativeQA，其难度和复杂度都进行了全面升级。
+        + 论文链接：https://www.paperweekly.site/papers/1397
+        + 代码链接：https://github.com/deepmind/narrativeqa
++ ## SQuAD
+	+ news
+		+ 这个竞赛基于SQuAD问答数据集，考察两个指标：EM和F1。
+		EM是指精确匹配，也就是模型给出的答案与标准答案一模一样；F1，是根据模型给出的答案和标准答案之间的重合度计算出来的，也就是结合了召回率和精确率。
+		目前阿里、微软团队并列第一，其中EM得分微软（r-net+融合模型）更高，F1得分阿里（SLQA+融合模型）更高。但是他们在EM成绩上都击败了“人类表现”
+	+ EMNLP2016 SQuAD:100,000+ Questions for Machine Comprehension of Text
+		+ https://arxiv.org/pdf/1606.05250.pdf
+	+ SQuAD，斯坦福在自然语言处理的野心
+		+ http://blog.csdn.net/jdbc/article/details/52514050
+	+ 一共有107,785问题，以及配套的 536 篇文章
+	+ 数据集的具体构建如下：
+		1. 文章是随机sample的wiki百科，一共有536篇wiki被选中。而每篇wiki，会被切成段落，最终生成了23215个自然段。之后就对这23215个自然段进行阅读理解，或者说自动问答。
+		2. 之后斯坦福，利用众包的方式，进行了给定文章，提问题并给答案的人工标注。他们将这两万多个段落给不同人，要求对每个段落提五个问题。
+		3. 让另一些人对提的这个问题用文中最短的片段给予答案，如果不会或者答案没有在文章中出现可以不给。之后经过他们的验证，人们所提的问题在问题类型分布上足够多样，并且有很多需要推理的问题，也就意味着这个集合十分有难度。如下图所示，作者列出了该数据集答案的类别分布，我们可以看到 日期，人名，地点，数字等都被囊括，且比例相当。
+		4. 这个数据集的评测标准有两个：
+			第一：F1
+            第二：EM。
+            EM是完全匹配的缩写，必须机器给出的和人给出的一样才算正确。哪怕有一个字母不一样，也会算错。而F1是将答案的短语切成词，和人的答案一起算recall，Precision和F1，即如果你match了一些词但不全对，仍然算分。
+		5. 为了这个数据集，他们还做了一个baseline，是通过提特征，用LR算法将特征组合，最终达到了40.4的em和51的f1。而现在IBM和新加坡管理大学利用深度学习模型，均突破了这个算法。可以想见，在不远的将来会有更多人对阅读理解发起挑战，自然语言的英雄也必将诞生。甚至会有算法超过人的准确度。
+
+	+ 对比
+		- 当前的公开数据集对比如下，MCTest，Algebra和Science是现在的三个公开的阅读理解数据集，
+		- 我们可以看到Squad在数量上远远超过这三个数据集，这使得在这个数据集上训练大规模复杂算法成为可能。
+		- 同时，相比于WikiQA和TrecQA这两个著名问答数据集，Squad也在数量上远远超过。
+		- 而CNN Mail和CBT虽然大，但是这两个数据集都是挖空猜词的数据集，并不是真正意义上的问答。
+
++ Others
 ---
 1. On Generating Characteristic-rich Question Sets for QA Evaluation
 	文章发表在 EMNLP 2016，本文详细阐述了 GraphQuestions 这个数据集的构造方法，强调这个数据集是富含特性的（Characteristic-rich）。
@@ -61,17 +96,11 @@
 	+ 一个分子机器学习 benchmark，最喜欢看到这种将机器学习应用到传统学科领域了。
 	+ 论文链接：http://www.paperweekly.site/papers/862
 	+ 数据集链接：http://t.cn/RWPda8r
+
++ 三分熟博士生の阅读理解与问答数据集 | 论文集精选 #03
+	+ https://zhuanlan.zhihu.com/p/30308726
 ---
 
-+ Deepmind 最新阅读理解数据集 NarrativeQA ，让机器挑战更复杂阅读理解问题
-	+ https://www.leiphone.com/news/201712/mjCYZ8WTiREqja6L.html
-	+ https://github.com/deepmind/narrativeqa
-	+ DeepMind认为目前的阅读理解数据集均存在着一定的局限性，包括：数据集小、不自然、只需要一句话定位回答的必须信息，等等。因而 Deepmind 认为，在这些数据集上的测试可能都是一个不能真实反映机器阅读理解能力的伪命题。
-
-+ The NarrativeQA Reading Comprehension Challenge
-	+ 由 DeepMind 发布的全新机器阅读理解数据集 NarrativeQA，其难度和复杂度都进行了全面升级。
-	+ 论文链接：https://www.paperweekly.site/papers/1397
-	+ 代码链接：https://github.com/deepmind/narrativeqa
 
 ---
 #Knowledge Base
