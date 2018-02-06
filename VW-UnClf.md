@@ -1,3 +1,35 @@
+- TensorForce Bitcoin Trading Bot
+	- 基于深度增强学习的比特币交易机器人
+- CakeChat
+	- 情感对话机器人
+- SentiBridge
+	- 中文实体情感知识库
+
+- gradient-checkpointing
+	- 神经网络训练省内存神器
+	- 本项目是由 OpenAI 提供的内存平衡工具。前馈模型可以在仅增加20%计算时间的基础上，让 GPU 适应十倍大的模型。
+	- 项目链接：https://github.com/openai/gradient-checkpointing
+- Minigo
+	- 基于AlphaGo Zero核心算法的围棋AI
+	- 项目链接：https://github.com/tensorflow/minigo
+
+- Synonyms
+	- 最好的中文近义词工具包
+
+- (***)「知识表示学习」专题论文推荐 | 每周论文清单
+	- https://zhuanlan.zhihu.com/p/33606964
+
+- Deep learning in production with Keras, Redis, Flask, and Apache
+	- https://www.pyimagesearch.com/2018/02/05/deep-learning-production-keras-redis-flask-apache/
+- MIT course 深度学习导论 by Alexander Amini, Ava Soleimany, Harini Suresh
+	- https://www.bilibili.com/video/av19113488/
+	- Sequence Modeling with Neural Networks、Convolutional Neural Networks、Deep Generative Modeling
+- A Tutorial on Modeling and Inference in Undirected Graphical Models for Hyperspectral Image Analysis
+	- https://arxiv.org/abs/1801.08268
+	- https://github.com/UBGewali/tutorial-UGM-hyperspectral
+---
+
+
 - word embedding
   - word2vec
   - glove
