@@ -1,4 +1,7 @@
-
+# Question && Answer
+- PaperWeekly 第37期 | 论文盘点：检索式问答系统的语义匹配模型（神经网络篇）
+	- https://zhuanlan.zhihu.com/p/26879507
+# Knowledge base
 - 知识图谱与知识表征学习系列
 	- https://zhuanlan.zhihu.com/p/27664263
 
