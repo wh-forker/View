@@ -1,3 +1,6 @@
+- OpenAI-2018年强化学习领域7大最新研究方向全盘点
+	- https://zhuanlan.zhihu.com/p/33630520
+
 - TensorForce Bitcoin Trading Bot
 	- 基于深度增强学习的比特币交易机器人
 - CakeChat
