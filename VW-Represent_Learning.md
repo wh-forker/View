@@ -1,16 +1,16 @@
 - ## Document Represent(文档表示)
-		- DisSent: Sentence Representation Learning from Explicit Discourse Relations
-  			- 借助文档中一些特殊的词训练句子 embedding。使用文档中 but、because、although 等词，以及其前后或关联的句子构成语义模型。也就是，使用这些词和句子的关系，约束了句子向量的生成空间（使用句子向量，预测关联词），从而达到训练句子向量目的。
-    			- 文章只对英文语料进行了测试，实际中文这样的结构也很多，如：因为、所以、虽然、但是，可以参考。
-    			- 论文链接：https://www.paperweekly.site/papers/1324
-		- Multilingual Hierarchical Attention Networks for Document Classification
-  			- 本文使用两个神经网络分别建模句子和文档，采用一种自下向上的基于向量的文本表示模型。首先使用 CNN/LSTM 来建模句子表示，接下来使用双向 GRU 模型对句子表示进行编码得到文档表示。
-  			- 论文链接：https://www.paperweekly.site/papers/1152**
-  			- 代码链接：https://github.com/idiap/mhan**
-		- **Supervised Learning of Universal Sentence Representations from Natural Language Inference Data**
-  			- 本文来自 Facebook AI Research。本文研究监督句子嵌入，作者研究并对比了几类常见的网络架构（LSTM，GRU，BiLSTM，BiLSTM with self attention 和 Hierachical CNN）, 5 类架构具很强的代表性。
-  			- 论文链接：https://www.paperweekly.site/papers/1332**
-  			- 代码链接：https://github.com/facebookresearch/InferSent**
+	- DisSent: Sentence Representation Learning from Explicit Discourse Relations
+  		- 借助文档中一些特殊的词训练句子 embedding。使用文档中 but、because、although 等词，以及其前后或关联的句子构成语义模型。也就是，使用这些词和句子的关系，约束了句子向量的生成空间（使用句子向量，预测关联词），从而达到训练句子向量目的。
+    		- 文章只对英文语料进行了测试，实际中文这样的结构也很多，如：因为、所以、虽然、但是，可以参考。
+   		- 论文链接：https://www.paperweekly.site/papers/1324
+	- Multilingual Hierarchical Attention Networks for Document Classification
+  		- 本文使用两个神经网络分别建模句子和文档，采用一种自下向上的基于向量的文本表示模型。首先使用 CNN/LSTM 来建模句子表示，接下来使用双向 GRU 模型对句子表示进行编码得到文档表示。
+  		- 论文链接：https://www.paperweekly.site/papers/1152**
+  		- 代码链接：https://github.com/idiap/mhan**
+	- **Supervised Learning of Universal Sentence Representations from Natural Language Inference Data**
+  		- 本文来自 Facebook AI Research。本文研究监督句子嵌入，作者研究并对比了几类常见的网络架构（LSTM，GRU，BiLSTM，BiLSTM with self attention 和 Hierachical CNN）, 5 类架构具很强的代表性。
+  		- 论文链接：https://www.paperweekly.site/papers/1332**
+  		- 代码链接：https://github.com/facebookresearch/InferSent**
 - ## A Survey of Word Embeddings Evaluation Methods
 	- https://arxiv.org/abs/1801.09536
 - ## Structural Deep Network Embedding
