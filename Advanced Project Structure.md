@@ -14,7 +14,6 @@ Plan 1 :
 - Logic Pattern Recognize:
 
 - Answer Comprehension:
-	- 
 
 
 
