@@ -10,7 +10,8 @@
 	- 本文并没有提出一套完整的解决方法，而是通过构建新的数据集（训练集和测试集尽可能不包含共同的关键词），验证上面的猜想。此外，作者还设计了一种 ANON 的正则方法，让网络不那么容易记住文档的关键词。
 	
 - A Hybrid Framework for Text Modeling with Convolutional RNN
-	- 本文使用 RNN+CNN 的结构来完成 NLP 中的问答任务，其亮点在于使用 RNN 获取 question 和 answer 的上下文语义，CNN 在语义层面对二者进行操作。	
+	- 本文使用 RNN+CNN 的结构来完成 NLP 中的问答任务，其亮点在于使用 RNN 获取 question 和 answer 的上下文语义，CNN 在语义层面对二者进行操作。
+	- http://www.sohu.com/a/165562211_651893
 - Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning
 	- 本文回顾了用于模型评估、模型选择和算法选择任务中的不同技术，并参考理论和实证研究讨论了每种技术的主要优势和劣势。
 - Training Neural Networks by Using Power Linear Units (PoLUs)
