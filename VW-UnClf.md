@@ -1,3 +1,6 @@
+- DR-BiLSTM: Dependent Reading Bidirectional LSTM for Natural Language Inference
+	- https://arxiv.org/abs/1802.05577
+	- https://www.arxiv-vanity.com/papers/1802.05577/
 - Deep Learning for Sentiment Analysis : A Survey
 	- 近年来，深度学习有了突破性发展，NLP 领域里的情感分析任务逐渐引入了这种方法，并形成了很多业内最佳结果。本文中，来自领英与伊利诺伊大学芝加哥分校的研究人员对基于深度学习的情感分析研究进行了详细论述。
 - Generating Wikipedia by Summarizing Long Sequences
