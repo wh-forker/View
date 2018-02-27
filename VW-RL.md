@@ -1,4 +1,10 @@
 # View-RL
+
++ Actor-Critic算法小结
+	+ https://zhuanlan.zhihu.com/p/29486661
+
+---
+
 - ## Un Clf
 	- http://geek.ai/
 - ## papers
