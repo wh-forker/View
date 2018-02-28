@@ -28,6 +28,8 @@ projects |Night
 Tmp Plan
 ---
 Make more time for code, algorithm, information
+Evaluate Math Level
+
 Make a paper
 
 NLP application scenarios
@@ -47,8 +49,11 @@ Key Points
 ---
 * Algorithm first
 * Build Knowledge Tree
+* Build Github Knowledge/Plan
+* Inisit on writing English blog
 
 Projects
 ---
 * QA-DEV
+  + QA-Craft
 * RL-Demo
