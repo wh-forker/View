@@ -2,6 +2,12 @@
 
 + Actor-Critic算法小结
 	+ https://zhuanlan.zhihu.com/p/29486661
+	+ 谷歌 dppo:
+		+ Heess N, Dhruva T B, Sriram S, et al. Emergence of Locomotion Behaviours in Rich Environments[J]. 2017.
+	+ openai ppo:
+		+ Schulman J, Wolski F, Dhariwal P, et al. Proximal Policy Optimization Algorithms[J]. 2017.
+	+ 最新ACKTR:
+		+ Wu Y, Mansimov E, Liao S, et al. Scalable trust-region method for deep reinforcement learning using Kronecker-factored approximation[J]. 2017.
 
 ---
 
