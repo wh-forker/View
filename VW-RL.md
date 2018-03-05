@@ -1,5 +1,8 @@
 # View-RL
 
++ DQN
+	+ https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/4-06-DQN/
+	+ Playing Atari with Deep Reinforcement Learning
 + Actor-Critic算法小结
 	+ https://zhuanlan.zhihu.com/p/29486661
 	+ 谷歌 dppo:
