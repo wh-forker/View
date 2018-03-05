@@ -1,7 +1,11 @@
 # View-RL
 
-+ Confuse
++ Reference Websites:
+	+ https://www.zhihu.com/question/41477987
 	+ http://www.cnblogs.com/jerrylead/archive/2011/05/13/2045309.html
+
++ SARSA
+	+ a
 + DQN
 	+ https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/4-06-DQN/
 		+ 简单来说, DQN 有一个记忆库用于学习之前的经历. 在之前的简介影片中提到过, Q learning 是一种 off-policy 离线学习法, 它能学习当前经历着的, 也能学习过去经历过的, 甚至是学习别人的经历. 所以每次 DQN 更新的时候, 我们都可以随机抽取一些之前的经历进行学习. 随机抽取这种做法打乱了经历之间的相关性, 也使得神经网络更新更有效率. 
