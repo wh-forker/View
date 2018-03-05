@@ -1,5 +1,7 @@
 # View-RL
 
++ Confuse
+	+ http://www.cnblogs.com/jerrylead/archive/2011/05/13/2045309.html
 + DQN
 	+ https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/4-06-DQN/
 	+ Playing Atari with Deep Reinforcement Learning
