@@ -15,7 +15,7 @@
   	- http://tianyalinfeng.iteye.com/blog/1259542
 - Python Extension Packages
   	- https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy
-- keras GUP
+- keras GPU
   	- http://blog.csdn.net/sinat_26917383/article/details/75633754
 - Deep Learning 读书笔记
   	- http://www.cnblogs.com/zkw159/p/6305836.html
