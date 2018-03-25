@@ -1,93 +1,100 @@
 ## View-NLP
-- # Tasks
-	- pos tagging
-	- word segmentation
-	- NER
-	- semantic analysis
-	- machine translate
-	- machine reading comprehension
-	- QA system
-	- (NLG)natural language generation
-	- short text expansion
-	- short text similarity
-	- coreference resolution (指代消解)
-- # Papers
-	- ## Attention
-		- Attention is all you need
-		- Hierarchical Attention Networks for Document Classification
-			- Attention mechanism layer which reduces RNN/Bi-RNN outputs with Attention vector.
-	- ## Dialog System
-		- End-to-End Optimization of Task-Oriented Dialogue Model with Deep Reinforcement Learning
-  			- 一篇基于强化学习的端到端对话系统研究工作，来自 CMU 和 Google。
-  			- 论文链接：http://www.paperweekly.site/papers/1257
-	- ## Grammer Model
-		- Deep AND-OR Grammar Networks for Visual Recognition
-  			- AOG 的全称叫 AND-OR graph，是一种语法模型（grammer model）。在人工智能的发展历程中，大体有两种解决办法：一种是自底向上，即目前非常流形的深度神经网络方法，另一种方法是自顶向下，语法模型可以认为是一种自顶向下的方法。
-  			- 把语法模型和深度神经网络模型结合起来，设计的模型同时兼顾特征的 exploration and exploitation（探索和利用），并在网络的深度和宽度上保持平衡；
-    			- 设计的网络结构，在分类任务和目标检测任务上，都比基于残差结构的方法要好。
-	- ## DRL4NLP
-		- https://github.com/ganeshjawahar/drl4nlp.scratchpad
-		- Policy Gradients
-			- buck_arxiv17: Ask the Right Questions: Active Question Reformulation with Reinforcement Learning [arXiv]
-			- dhingra_acl17: Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access [arXiv] [code]
-			- paulus_arxiv17: A Deep Reinforced Model for Abstractive Summarization [arXiv]
-			- nogueira_arxiv17: Task-Oriented Query Reformulation with Reinforcement Learning [arXiv] [code]
-			- li_iclr17: Dialog Learning with Human-in-the-loop [arXiv] [code]
-			- li_iclr17_2: Learning through dialogue interactions by asking questions [arXiv] [code]
-			- yogatama_iclr17: Learning to Compose Words into Sentences with Reinforcement Learning [arXiv]
-			- dinu_nips16w: Reinforcement Learning for Transition-Based Mention Detection [arXiv]
-			- clark_emnlp16: Deep Reinforcement Learning for Mention-Ranking Coreference models [arXiv] [code]
-		- Value Function
-			- narasimhan_emnlp16: Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning [arXiv] [code]
-		- Misc
-			- bordes_iclr17: Learning End-to-End Goal-Oriented Dialog [arXiv]
-			- weston_nips16: Dialog-based Language Learning [arXiv] [code]
-			- nogueira_nips16: End-to-End Goal-Driven Web Navigation [arXiv] [code]
-	- ## NMT
-		- Machine Translation Using Semantic Web Technologies: A Survey
-  			- 本文是一篇综述文章，用知识图谱来解决机器翻译问题。
-  			- 论文链接：http://www.paperweekly.site/papers/1229
-	- ## QA
-		- 12 papers to understand QA system with Deep Learning
-			- http://blog.csdn.net/abcjennifer/article/details/51232645
-	- ## Relation Extract
-		- Reinforcement Learning for Relation Classification from Noisy Data**
-  			- 将强度学习应用于关系抽取任务中，取得了不错的效果。本文已被 AAAI2018 录用。作者团队在上期 PhD Talk 中对本文做过在线解读。
-    			- 实录回顾：清华大学冯珺：基于强化学习的关系抽取和文本分类**
-    			- 论文链接：http://www.paperweekly.site/papers/1260
-	- ## Senmentic
-		- Recurrent Neural Networks for Semantic Instance Segmentation
-  			- 本项目提出了一个基于 RNN 的语义实例分割模型，为图像中的每个目标顺序地生成一对 mask 及其对应的类概率。该模型是可端对端 + 可训练的，不需要对输出进行任何后处理，因此相比其他依靠 object proposal 的方法更为简单。
-  			- 论文链接：https://www.paperweekly.site/papers/1355**
-  			- 代码链接：https://github.com/facebookresearch/InferSent
-	- ## Short Text Expand
-		- End-to-end Learning for Short Text Expansion
-  			- 本文第一次用了 end to end 模型来做 short text expansion 这个 task，方法上用了 memory network 来提升性能，在多个数据集上证明了方法的效果；Short text expansion 对很多问题都有帮助，所以这篇 paper 解决的问题是有意义的。
-    			- 通过在多个数据集上的实验证明了 model 的可靠性，设计的方法非常直观，很 intuitive。
-    			- 论文链接：https://www.paperweekly.site/papers/1313
-	- ## Sentiment
-		- Benchmarking Multimodal Sentiment Analysis
-  			- 多模态情感分析目前还有很多难点，该文提出了一个基于 CNN 的多模态融合框架，融合表情，语音，文本等信息做情感分析，情绪识别。
-    			- 论文链接：https://www.paperweekly.site/papers/1306
-		- Aspect Level Sentiment Classification with Deep Memory Network
-			- 《Aspect Level Sentiment Classification with Deep Memory Network》阅读笔记
-		- Attention-based LSTM for Aspect-level Sentiment Classification
-			- 《Attention-based LSTM for Aspect-level Sentiment Classification》阅读笔记
-	- ## Text Clf
-		- Hierarchical Attention Networks for Document Classification
-			- Learning Structured Representation for Text Classification via Reinforcement Learning
-  			- 将强化学习应用于文本分类任务中，已被 AAAI2018录用。作者团队在上期 PhD Talk 中对本文做过在线解读。
-    			- 实录回顾：清华大学冯珺：基于强化学习的关系抽取和文本分类**
-    			- 论文链接：http://www.paperweekly.site/papers/1261
-	- ## Text Generation
-		- Adversarial Ranking for Language Generation
-  			- 本文提出了一种 RankGAN 模型，来解决如何生成高质量文本的问题。
-  			- 论文链接：https://www.paperweekly.site/papers/1290
-		- Neural Text Generation: A Practical Guide
-  			- 本文是一篇 Practical Guide，讲了很多用端到端方法来做文本生成问题时的细节问题和技巧，值得一看。
-	- ## Transfer 
-		- Fast.ai推出NLP最新迁移学习方法「微调语言模型」，可将误差减少超过20%！
-			- Fine-tuned Language Models for Text Classification
+
+##  Tasks
+- pos tagging
+- word segmentation
+- NER
+- semantic analysis
+- machine translate
+- machine reading comprehension
+- QA system
+- (NLG)natural language generation
+- short text expansion
+- short text similarity
+- coreference resolution (指代消解)
+
+![](https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibt9rkyqib37KkCF45lBNmGXgc2QrxlrYtKxR8JPIWd4iaicPtQrcSWibmVodtGKttv91H6AwvJZGxbvA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+- NLP 主要任务 ： 分类、匹配、翻译、结构化预测、与序贯决策过程
+- 对于前四个任务，深度学习方法的表现优于或显著优于传统方法
+
+
+## Papers
+- ## Attention
+    - Attention is all you need
+    - Hierarchical Attention Networks for Document Classification
+        - Attention mechanism layer which reduces RNN/Bi-RNN outputs with Attention vector.
+- ## Dialog System
+    - End-to-End Optimization of Task-Oriented Dialogue Model with Deep Reinforcement Learning
+        - 一篇基于强化学习的端到端对话系统研究工作，来自 CMU 和 Google。
+        - 论文链接：http://www.paperweekly.site/papers/1257
+- ## Grammer Model
+    - Deep AND-OR Grammar Networks for Visual Recognition
+        - AOG 的全称叫 AND-OR graph，是一种语法模型（grammer model）。在人工智能的发展历程中，大体有两种解决办法：一种是自底向上，即目前非常流形的深度神经网络方法，另一种方法是自顶向下，语法模型可以认为是一种自顶向下的方法。
+        - 把语法模型和深度神经网络模型结合起来，设计的模型同时兼顾特征的 exploration and exploitation（探索和利用），并在网络的深度和宽度上保持平衡；
+            - 设计的网络结构，在分类任务和目标检测任务上，都比基于残差结构的方法要好。
+- ## DRL4NLP
+    - https://github.com/ganeshjawahar/drl4nlp.scratchpad
+    - Policy Gradients
+        - buck_arxiv17: Ask the Right Questions: Active Question Reformulation with Reinforcement Learning [arXiv]
+        - dhingra_acl17: Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access [arXiv] [code]
+        - paulus_arxiv17: A Deep Reinforced Model for Abstractive Summarization [arXiv]
+        - nogueira_arxiv17: Task-Oriented Query Reformulation with Reinforcement Learning [arXiv] [code]
+        - li_iclr17: Dialog Learning with Human-in-the-loop [arXiv] [code]
+        - li_iclr17_2: Learning through dialogue interactions by asking questions [arXiv] [code]
+        - yogatama_iclr17: Learning to Compose Words into Sentences with Reinforcement Learning [arXiv]
+        - dinu_nips16w: Reinforcement Learning for Transition-Based Mention Detection [arXiv]
+        - clark_emnlp16: Deep Reinforcement Learning for Mention-Ranking Coreference models [arXiv] [code]
+    - Value Function
+        - narasimhan_emnlp16: Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning [arXiv] [code]
+    - Misc
+        - bordes_iclr17: Learning End-to-End Goal-Oriented Dialog [arXiv]
+        - weston_nips16: Dialog-based Language Learning [arXiv] [code]
+        - nogueira_nips16: End-to-End Goal-Driven Web Navigation [arXiv] [code]
+- ## NMT
+    - Machine Translation Using Semantic Web Technologies: A Survey
+        - 本文是一篇综述文章，用知识图谱来解决机器翻译问题。
+        - 论文链接：http://www.paperweekly.site/papers/1229
+- ## QA
+    - 12 papers to understand QA system with Deep Learning
+        - http://blog.csdn.net/abcjennifer/article/details/51232645
+- ## Relation Extract
+    - Reinforcement Learning for Relation Classification from Noisy Data**
+        - 将强度学习应用于关系抽取任务中，取得了不错的效果。本文已被 AAAI2018 录用。作者团队在上期 PhD Talk 中对本文做过在线解读。
+            - 实录回顾：清华大学冯珺：基于强化学习的关系抽取和文本分类**
+            - 论文链接：http://www.paperweekly.site/papers/1260
+- ## Senmentic
+    - Recurrent Neural Networks for Semantic Instance Segmentation
+        - 本项目提出了一个基于 RNN 的语义实例分割模型，为图像中的每个目标顺序地生成一对 mask 及其对应的类概率。该模型是可端对端 + 可训练的，不需要对输出进行任何后处理，因此相比其他依靠 object proposal 的方法更为简单。
+        - 论文链接：https://www.paperweekly.site/papers/1355**
+        - 代码链接：https://github.com/facebookresearch/InferSent
+- ## Short Text Expand
+    - End-to-end Learning for Short Text Expansion
+        - 本文第一次用了 end to end 模型来做 short text expansion 这个 task，方法上用了 memory network 来提升性能，在多个数据集上证明了方法的效果；Short text expansion 对很多问题都有帮助，所以这篇 paper 解决的问题是有意义的。
+            - 通过在多个数据集上的实验证明了 model 的可靠性，设计的方法非常直观，很 intuitive。
+            - 论文链接：https://www.paperweekly.site/papers/1313
+- ## Sentiment
+    - Benchmarking Multimodal Sentiment Analysis
+        - 多模态情感分析目前还有很多难点，该文提出了一个基于 CNN 的多模态融合框架，融合表情，语音，文本等信息做情感分析，情绪识别。
+            - 论文链接：https://www.paperweekly.site/papers/1306
+    - Aspect Level Sentiment Classification with Deep Memory Network
+        - 《Aspect Level Sentiment Classification with Deep Memory Network》阅读笔记
+    - Attention-based LSTM for Aspect-level Sentiment Classification
+        - 《Attention-based LSTM for Aspect-level Sentiment Classification》阅读笔记
+- ## Text Clf
+    - Hierarchical Attention Networks for Document Classification
+        - Learning Structured Representation for Text Classification via Reinforcement Learning
+        - 将强化学习应用于文本分类任务中，已被 AAAI2018录用。作者团队在上期 PhD Talk 中对本文做过在线解读。
+            - 实录回顾：清华大学冯珺：基于强化学习的关系抽取和文本分类**
+            - 论文链接：http://www.paperweekly.site/papers/1261
+- ## Text Generation
+    - Adversarial Ranking for Language Generation
+        - 本文提出了一种 RankGAN 模型，来解决如何生成高质量文本的问题。
+        - 论文链接：https://www.paperweekly.site/papers/1290
+    - Neural Text Generation: A Practical Guide
+        - 本文是一篇 Practical Guide，讲了很多用端到端方法来做文本生成问题时的细节问题和技巧，值得一看。
+- ## Transfer 
+    - Fast.ai推出NLP最新迁移学习方法「微调语言模型」，可将误差减少超过20%！
+        - Fine-tuned Language Models for Text Classification
 
 
 ---
@@ -174,3 +181,12 @@
 		- 目前取得重要成果的NLP任务大多在文本理解范畴，如文本分类，情感分类，机器翻译，文档摘要，阅读理解等。这些任务大多是对已有文本的“消费”。自然语言处理的飞跃，需要实现从“消费”到“生产”的飞跃，即探索如何由智能机器自动产生新的有用文本。虽然现在有媒体宣称实现了新闻的自动生成，但从技术上并无太多高深之处，更多是给定数据后，对既有新闻模板的自动填充，无论是从可扩展性还是智能性而言，都乏善可陈。我认为，自然语言处理即将面临的一个飞跃，就是智能机器可以汇总和归纳给定数据和信息，自动产生符合相关标准的文本，例如新闻、专利、百科词条[5]、论文的自动生成，以及智能人机对话系统等等。毫无疑问，这个技术飞跃带来的应用拥有无限的想象空间。
 	- 大规模知识图谱的构建与应用
 		- “知识图谱”是谷歌推出的产品名，现在已经成为对大规模知识库的通用说法。如果说深度学习是机器大脑的学习机制，那么知识图谱可以看做机器大脑的知识库。知识图谱是问答系统的重要信息来源，也是阅读理解、机器翻译、文档摘要等任务进一步发展的重要支撑。目前，知识图谱从构建到应用都仍有很多问题亟待解决，例如新概念、新知识的自动学习，如何基于知识图谱实现智能推理，等等。在这方面，我一直关注知识的分布式表示学习，能够建立统一的语义表示空间，有效解决大规模知识图谱的数据稀疏问题，有望在知识获取、融合和推理方面发挥重要作用[6]。
+
+- VP3
+	- 端到端训练与表征学习是深度学习的核心特征，这使其成为 NLP 的强大工具。但深度学习并非万能，它在对解决**多轮对话**等复杂任务异常关键的**推断和决策**上表现欠佳。此外，如何结合符号处理与神经处理、如何应对长尾现象等问题依然是深度学习 NLP 面临的挑战[1]。
+	- 自然语言处理领域有很多复杂任务，这些任务可能无法仅使用深度学习来轻松完成。例如，多轮对话是一个非常复杂的过程，涉及语言理解、语言生成、对话管理、知识库访问和推断。对话管理可以正式作为序贯决策过程，其中强化学习发挥关键作用。很明显，把深度学习和强化学习结合起来可能有利于完成任务。
+	- 总之，深度学习 NLP 仍然面临许多待解决的挑战。深度学习与其他技术（强化学习、推断、知识）结合起来将会进一步扩展 NLP 的边界[1]。
+
+## Reference
+- [1] 李航NSR论文：深度学习NLP的现有优势与未来挑战
+	- Deep Learning for Natural Language Processing: Advantages and Challenges
