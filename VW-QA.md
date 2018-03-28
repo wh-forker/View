@@ -1,16 +1,18 @@
-# papers
-+ ## A deep reinforcement learning chatbot
-    + https://arxiv.org/pdf/1801.06700.pdf
+# Papers
+1. A deep reinforcement learning chatbot
++ https://arxiv.org/pdf/1801.06700.pdf
 
-+ ## A through examination of the CNN Daily reading comprehension task
+2. A through examination of the CNN Daily reading comprehension task
 
-+ ## Ask the right question : active question reformulation with reinforcement learning
+3. Ask the right question : active question reformulation with reinforcement learning
 
-+ ## Gated attention readers for text comprehension
+4. Gated attention readers for text comprehension
 
-+ ## Hybird attention over attention reader
+5. Hybird attention over attention reader
 
-+ ## MaskGAN : better text generation via filling
+6. MaskGAN : better text generation via filling
+
+7. Teach Mechine to read and comprehension
 
 
 # Question && Answer
@@ -35,6 +37,10 @@
 	- https://www.paperweekly.site/papers/1756
 
 # Reading and Comprehension
+- 百度 2018 机器阅读理解竞赛
+- 搜狗 问答竞赛
+- 机器阅读理解相关论文汇总（截止2017年底）
+	- https://www.zybuluo.com/ShawnNg/note/622592
 - 百度NLP团队登顶MARCO阅读理解测试排行榜
 	- http://tech.qq.com/a/20180222/008569.htm
 	- 使用了一种新的多候选文档联合建模表示方法，通过注意力机制使不同文档产生的答案之间能够产生交换信息，互相印证，从而更好的预测答案。据介绍，此次百度只凭借单模型（single model）就拿到了第一名，并没有提交更容易拿高分的多模型集成（ensemble）结果
@@ -130,7 +136,3 @@
 		- Having more data usually don't hurt. Training on a bigger corpus should be beneficial. Reddit comments dataset seems the biggest for now (and is too big for this program to support it). Another trick to artificially increase the dataset size when creating the corpus could be to split the sentences of each training sample (ex: from the sample Q:Sentence 1. Sentence 2. => A:Sentence X. Sentence Y. we could generate 3 new samples: Q:Sentence 1. Sentence 2. => A:Sentence X., Q:Sentence 2. => A:Sentence X. Sentence Y. and Q:Sentence 2. => A:Sentence X.. Warning: other combinations like Q:Sentence 1. => A:Sentence X. won't work because it would break the transition 2 => X which links the question to the answer)
 		- The testing curve should really be monitored as done in my other music generation project. This would greatly help to see the impact of dropout on overfitting. For now it's just done empirically by manually checking the testing prediction at different training steps.
 		- For now, the questions are independent from each other. To link questions together, a straightforward way would be to feed all previous questions and answer to the encoder before giving the answer. Some caching could be done on the final encoder stated to avoid recomputing it each time. To improve the accuracy, the network should be retrain on entire dialogues instead of just individual QA. Also when feeding the previous dialogue to the encoder, new tokens Q and A could be added so the encoder knows when the interlocutor is changing. I'm not sure though that the simple seq2seq model would be sufficient to capture long term dependencies between sentences. Adding a bucket system to group similar input lengths together could greatly improve training speed.
-
-
-
-+ ## Teach Mechine to read and comprehension
