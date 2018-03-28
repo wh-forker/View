@@ -1,4 +1,12 @@
 # Data-list
+
++ 中文文本语料库整理（不定时更新2015-10-24）
+
+## 搜狗语料
++ QA
+	+ http://task.www.sogou.com/cips-sogou_qa/
++ Others
+
 ## QA
 
 ### MS MARCO
