@@ -104,6 +104,10 @@
 
 ---
 ## Sequence Label
+Corpus:
++ 国内可用免费语料库
+  + http://www.cnblogs.com/mo-wang/p/4444858.html
+
 + 一个中文的标注语料库。可用于训练HMM模型。
 	+ https://github.com/liwenzhu/corpusZh
 
