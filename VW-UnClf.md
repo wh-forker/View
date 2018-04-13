@@ -1,3 +1,12 @@
++ 使用Keras搭建深度残差网络
+	+ https://www.2cto.com/kf/201607/526863.html
++ 解决机器学习问题有通法
+	+ https://www.jiqizhixin.com/articles/2017-09-21-10
++ 强化学习大讲堂
+	+ https://zhuanlan.zhihu.com/sharerl
++ SVM 与LR 的区别 
+	 http://www.cnblogs.com/zhizhan/p/5038747.html
+
 + attention is all your need
 	+ http://nlp.seas.harvard.edu/2018/04/03/attention.html
 	+ https://github.com/harvardnlp/annotated-transformer
