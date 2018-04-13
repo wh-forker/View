@@ -1,3 +1,7 @@
++ wikidata
+	+ https://www.wikidata.org/wiki/Wikidata:Main_Page
++ PyCharm选择性忽略PEP8代码风格警告信息
+	+ https://blog.csdn.net/zgljl2012/article/details/51907663
 + 使用Keras搭建深度残差网络
 	+ https://www.2cto.com/kf/201607/526863.html
 + 解决机器学习问题有通法
