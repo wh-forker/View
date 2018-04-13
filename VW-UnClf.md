@@ -1,3 +1,10 @@
++ attention is all your need
+	+ http://nlp.seas.harvard.edu/2018/04/03/attention.html
+	+ https://github.com/harvardnlp/annotated-transformer
++ Question answering over Freebase (single-relation)
+	+ https://github.com/quyingqi/kbqa-ar-smcnn
++ App : https://lopespm.github.io/apps/2018/03/12/arxiv-papers
+
 + 贝叶斯机器学习前沿进展
 	+ http://chuansong.me/n/2152434851911
 - Imitation Learning
