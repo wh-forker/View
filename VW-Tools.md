@@ -1,3 +1,5 @@
++ CUDA Runtime API 
+	+ http://blog.csdn.net/fengbingchun/article/details/45287519
 - pip
 	- http://www.cnblogs.com/taosim/articles/3288821.html
 - python split
