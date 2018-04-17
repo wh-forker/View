@@ -1,3 +1,8 @@
++ 【RNN/LSTM的衰落】《The fall of RNN / LSTM》by Eugenio Culurciello 
+	+ https://pan.baidu.com/s/1CdJsLFu1zM9dEjV-no3lng
++ DeepLearn blog
+	+ http://deeplearn-ai.com/deeplearn/?i=1
+	+ https://github.com/GauravBh1010tt/DeepLearn
 + wikidata
 	+ https://www.wikidata.org/wiki/Wikidata:Main_Page
 + PyCharm选择性忽略PEP8代码风格警告信息
