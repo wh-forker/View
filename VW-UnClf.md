@@ -1,3 +1,16 @@
+- software license
+	- http://geek-workshop.com/thread-1860-1-1.html
+
+- Speech and Language Processing(3rd ed. draft)
+- http://www.deeplearningbook.org/
+
+- Attention
+  - ABCNN: Attention-Based Convolutional Neural Network for Modeling Sentence Pairs
+- leetcode
+  - Dynamic Programming
+    - https://www.zhihu.com/question/23995189
+- https://web.stanford.edu/~pkurlat/teaching/5%20-%20The%20Bellman%20Equation.pdf
+
 + 【RNN/LSTM的衰落】《The fall of RNN / LSTM》by Eugenio Culurciello 
 	+ https://pan.baidu.com/s/1CdJsLFu1zM9dEjV-no3lng
 + DeepLearn blog
