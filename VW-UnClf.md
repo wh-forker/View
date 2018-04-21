@@ -1,3 +1,25 @@
+- (*)【机器学习基本理论】详解最大似然估计（MLE）、最大后验概率估计（MAP），以及贝叶斯公式的理解
+- (*)似然与极大似然估计
+	- https://zhuanlan.zhihu.com/p/22092462
+	- 概率是在特定环境下某件事情发生的可能性
+	- 而似然刚好相反，是在确定的结果下去推测产生这个结果的可能环境（参数）
+	- ！[](https://www.zhihu.com/equation?tex=%5Cmathcal%7BL%7D%28%5Ctheta%7Cx%29+%3DP%28x%7C%5Ctheta%29)
+	- 解释了硬币问题的似然估计方法
+- （*）入门 | 什么是最大似然估计、最大后验估计以及贝叶斯参数估计
+	- 机器之心
+- 关于序列建模，是时候抛弃RNN和LSTM了?
+	-机器之心
+	- 在 2014 年，RNN 和 LSTM 起死回生。我们都读过 Colah 的博客《Understanding LSTM Networks》和 Karpathy 的对 RNN 的颂歌《The Unreasonable Effectiveness of Recurrent Neural Networks》。但当时我们都「too young too simple」
+	- 现在，序列变换（seq2seq）才是求解序列学习的真正答案，序列变换还在语音到文本理解的任务中取得了优越的成果，并提升了 Siri、Cortana、谷歌语音助理和 Alexa 的性能
+	- 在 2015-2016 年间，出现了 ResNet 和 Attention 模型。从而我们知道，LSTM 不过是一项巧妙的「搭桥术」。并且注意力模型表明 MLP 网络可以被「通过上下文向量对网络影响求平均」替换
+	
+- 如何从零开始构建深度学习项目？
+	- GAN 着色
+- 入门 | 通过 Q-learning 深入理解强化学习
+	-机器之心
+- 学界 | Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
+	- 机器之心
+	- 当学习完成之后，智能体的知识就固定不变了；如果这个智能体被用于其他的任务，那么它需要重新训练（要么完全重来，要么部分重新训练），而这又需要大量新的训练数据。相比较之下，生物智能体具备一种出色的能力，这个能力使它们快速高效地学习持续性经验：动物可以学会找到食物源并且记下（最快到达食物源的路径）食物源的位置，发现并记住好的或者不好的新事物或者新场景，等等——而这些往往只需要一次亲身经历就能完成。
 - 【Facebook数据分析工具(情感分析、词频分析等)】
 	- Booksoup allows you to analyse and traverse your downloaded facebook data, including features such as sentiment analysis and message frequency analysis over time.' 
 	- by Jake Reid Browning GitHub : https://github.com/Buroni/booksoup
