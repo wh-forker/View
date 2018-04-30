@@ -1,3 +1,248 @@
+- TensorFlow Hub（350 stars on Github，来自TensorFlow团队）
+    - 该项目是一个发布、发现和重用TensorFlow中机器学习模块的开源库。
+    - 项目地址：https://github.com/tensorflow/hub
+- Chess-alpha-zero（1014 stars on Github，来自Samuel）
+    - 通过AlphaGo Zero方法进行国际象棋的强化学习
+    - 项目地址：
+    - https://github.com/Zeta36/chess-alpha-zero
+- Deep-neuroevolution（573 stars on Github，来自 Uber）
+    - Uber AI Lab 开源的深度神经进化算法。
+    - 项目地址：
+    - https://github.com/uber-common/deep-neuroevolution
+- TCN（498 stars on Github，来自Zico Kolter）
+    - 序列建模基准和时域卷积网络
+    - 项目地址：https://github.com/locuslab/TCN
+- Ann-visualizer（654 stars on Github，来自Prodi Code）
+    - ANN Visualizer 是一个 Python 库，可以用一行代码可视化人工神经网络，利用 Python 的 graphviz 库创建一个整洁的可视化神经网络。
+    - 项目地址：https://github.com/Prodicode/ann-visualizer
+
+- 机器学习入门第一课：决策树学习概述与实现
+- 10个例子带你了解机器学习中的线性代数
+    1. Dataset and Data Files 数据集和数据文件
+    2. Images and Photographs 图像和照片
+    3. One-Hot Encoding one-hot 编码
+    4. Linear Regression 线性回归
+    5. Regularization 正则化
+        + 一种常用于模型在数据拟合时尽量减小系数值的技术称为正则化，常见的实现包括正则化的 L2 和 L1 形式。
+        + 这两种正则化形式实际上是系数矢量的大小或长度的度量，是直接脱胎于名为矢量范数的线性代数方法。
+    6. Principal Component Analysis 主成分分析
+        + PCA 方法的核心是线性代数的矩阵分解方法，可能会用到特征分解，更广义的实现可以使用奇异值分解（SVD）
+    7. Singular-Value Decomposition 奇异值分解
+        - 该方法在线性代数中有广泛的用途，可直接应用于特征选择、可视化、降噪等方面
+    8. Latent Semantic Analysis 潜在语义分析
+        - 在用于处理文本数据的机器学习子领域（称为自然语言处理），通常将文档表示为词出现的大矩阵。
+        - 例如，矩阵的列可以是词汇表中的已知词，行可以是文本的句子、段落、页面或文档，矩阵中的单元格标记为单词出现的次数或频率。
+        - 这是文本的稀疏矩阵表示。矩阵分解方法（如奇异值分解）可以应用于此稀疏矩阵，该分解方法可以提炼出矩阵表示中相关性最强的部分。以这种方式处理的文档比较容易用来比较、查询，并作为监督机器学习模型的基础。
+        - 这种形式的数据准备称为潜在语义分析（简称 LSA），也称为潜在语义索引（LSI）
+    9. Recommender Systems 推荐系统
+        - 涉及产品推荐的预测建模问题被称为推荐系统，这是机器学习的一个子领域。
+        - 例如，基于你在亚马逊上的购买记录和与你类似的客户的购买记录向你推荐书籍，或根据你或与你相似的用户在 Netflix 上的观看历史向你推荐电影或电视节目。
+        - 推荐系统的开发主要涉及线性代数方法。一个简单的例子就是使用欧式距离或点积之类的距离度量来计算稀疏顾客行为向量之间的相似度。
+        - 像奇异值分解这样的矩阵分解方法在推荐系统中被广泛使用，以提取项目和用户数据的有用部分，以备查询、检索及比较
+    10. Deep Learning 深度学习
+
+
+- blog 
+    - http://www.cnblogs.com/zhangchaoyang/default.html
+
+- EM 算法
+    - http://www.cnblogs.com/zhangchaoyang
+
+- 入门|贝叶斯线性回归方法的解释和有点
+	- 从贝叶斯学派的观点来看，我们使用概率分布而非点估计来构建线性回归
+	- 反应变量 y 不是被估计的单个值，而是假设从一个正态分布中提取而来
+	- 贝叶斯优点：
+		- 先验分布：如果具备领域知识或者对于模型参数的猜测，我们可以在模型中将它们包含进来，而不是像在线性回归的频率方法那样：假设所有关于参数的所需信息都来自于数据。如果事先没有没有任何的预估，我们可以为参数使用无信息先验，比如一个正态分布。
+		- 后验分布：使用贝叶斯线性回归的结果是一个基于训练数据和先验概率的模型参数的分布。这使得我们能够量化对模型的不确定性：如果我们拥有较少的数据点，后验分布将更加分散
+	- view1
+		- 直至今日，关于统计推断的主张和想法，大体可以纳入到两个体系之内，其一叫频率学派，其特征是把需要推断的参数θ视作固定且未知的常数，而样本X是随机的，其着眼点在样本空间，有关的概率计算都是针对X的分布。另一派叫做贝叶斯学派，他们把参数θ视作随机变量，而样本X是固定的，其着眼点在参数空间，重视参数θ的分布，固定的操作模式是通过参数的先验分布结合样本信息得到参数的后验分布
+		- 作者：秦松雄
+		- 链接：https://www.zhihu.com/question/20587681/answer/23060072
+	- https://github.com/WillKoehrsen/Data-Analysis/blob/master/bayesian_lr/Bayesian%20Linear%20Regression%20Demonstration.ipynbRecap of Frequentist Linear Regression
+
+- Tree-CNN：一招解决深度学习中的「灾难性遗忘」
+	- 深度学习领域一直存在一个比较严重的问题——“灾难性遗忘”，即一旦使用新的数据集去训练已有的模型，该模型将会失去对原数据集识别的能力
+	- 为解决这一问题，本文提出了树卷积神经网络，通过先将物体分为几个大类，然后再将各个大类依次进行划分、识别，就像树一样不断地开枝散叶，最终叶节点得到的类别就是我们所要识别的类
+	- Tree-CNN: A Deep Convolutional Neural Network for Lifelong Learning
+
+- 资源 | textgenrnn：只需几行代码即可训练文本生成网络
+	- 本文是一个 GitHub 项目，介绍了 textgenrnn，一个基于 Keras/TensorFlow 的 Python 3 模块。只需几行代码即可训练文本生成网络
+	- 项目地址：https://github.com/minimaxir/textgenrnn?reddit=1
+	- textgenrnn 是一个基于 Keras/TensorFlow 的 Python 3 模块，用于创建 char-rnn，具有许多很酷炫的特性：
+		- 它是一个使用注意力权重（attention-weighting）和跳跃嵌入（skip-embedding）等先进技术的现代神经网络架构，用于加速训练并提升模型质量。
+		- 能够在字符层级和词层级上进行训练和预测。
+		- 能够设置 RNN 的大小、层数，以及是否使用双向 RNN。
+		- 能够对任何通用的输入文本文件进行训练。
+		- 能够在 GPU 上训练模型，然后在 CPU 上使用这些模型。
+		- 在 GPU 上训练时能够使用强大的 CuDNN 实现 RNN，这比标准的 LSTM 实现大大加速了训练时间。
+		- 能够使用语境标签训练模型，能够更快地学习并在某些情况下产生更好的结果。
+	+ Tweet Generator：训练一个为任意数量的 Twitter 用户生成推文而优化的神经网络
+
+- 前沿|BAIR提出人机合作新范式：教你如何安全高效的在月球着陆
+- 业界 | 在个人电脑上快速训练Atari深度学习模型：Uber开源「深度神经进化」加速版
+	- Uber 在去年底发表的研究中发现，通过使用遗传算法高效演化 DNN，可以训练含有超过 400 万参数的深度卷积网络在像素级别上玩 Atari 游戏；这种方式在许多游戏中比现代深度强化学习算法或进化策略表现得更好，同时由于更好的并行化能达到更快的速度。
+	- 不过这种方法虽好但当时对于硬件的要求很高，近日 Uber 新的开源项目解决了这一问题，其代码可以让一台普通计算机在 4 个小时内训练好用于 Atari 游戏的深度学习模型。现在，技术爱好者们也可以接触这一前沿研究领域了
+	- 项目 GitHub 地址：https://github.com/uber-common/deep-neuroevolution/tree/master/gpu_implementation
+	- 参考Uber五篇论文：前沿 | 利用遗传算法优化神经网络：Uber提出深度学习训练新方式
+- 吴恩达深度学习工程师课程汇总(附中文视频笔记)
+	- https://zhuanlan.zhihu.com/p/30870804
+
+- SIGIR 2018 | 通过深度模型加深和拓宽聊天话题，让你与机器多聊两句
+	- 目前大多数基于生成的对话系统都会有很多回答让人觉得呆板无趣，无法进行有意思的长时间聊天。近日，山东大学和清华大学的研究者联合提出了一种使用深度模型来对话题进行延展和深入的方法 DAWnet。
+	- 该方法能有效地让多轮对话系统给出的答复更加生动有趣，从而有助于实现人与机器的长时间聊天对话。机器之心对该研究论文进行了摘要编译。此外，研究者还公布了他们在本论文中所构建的数据集以及相关代码和参数设置
+	- 论文、数据和代码地址：https://sigirdawnet.wixsite.com/dawnet
+
+- 业界 | Petuum提出深度生成模型统一的统计学框架
+	- Petuum 和 CMU 合作的论文《On Unifying Deep Generative Models》提出深度生成模型的统一框架。该框架在理论上揭示了近来流行的 GAN、VAE（及大量变体），与经典的贝叶斯变分推断算法、wake-sleep 算法之间的内在联系；为广阔的深度生成模型领域提供了一个统一的视角。7 月份在 ICML 2018 的名为「深度生成模型理论基础和应用」的研讨会将更进一步探讨深度生成模型的研究
+	- 论文地址：https://arxiv.org/pdf/1706.00550.pdf
+
+- oxford-cs-deepnlp
+	- https://github.com/oxford-cs-deepnlp-2017/lectures
+	- http://study.163.com/course/introduction/1004336028.htm
+- 今日头条AI实验室主任李航：自然语言的现状和发展 | 北大AI公开课笔记
+	- https://c.m.163.com/news/s/S1521443845851.html
+	- 合理行动的智能机
+		- Turing Test
+	- 人脑如何做语言理解
+		- 词汇
+		- 句法
+		- 语义
+		- 语用
+		- 有几个重要的脑区是和语言密切相关的：布洛卡区域和维尼科区
+		- 比如维尼科区负责词汇，布洛卡区负责句法
+		- 语言理解是非常复杂的，大脑一共有1011 到1015 个神经元，这样复杂的计算系统还是并行处理，我们每个人在做这样复杂的处理
+	- attention
+	- seq2seq
+	- 对话
+		- 多人对话中也是，现在用的最多的是深度强化学习
+		- 谷歌提出的Neural Symbolic Machines模型，特点结合符号处理和神经处理，其框架也是基于分析的模型
+		- 还有华为方舟提出的类似模型（Neural Responding Machine）。
+		- 在多人中，微软提出层次化的深度强化学习Hierarchical Deep Reinforcement Learning。
+		- 对话目标可以分层，展开和复述，将有限状态机变成层次化。学习就可以用层次化甚至强化学习来做这样的东西。
+        - 单轮对话
+            - 分析 ： 基于分析就是分类问题
+            - 检索 ： 检索当成匹配问题
+            - 生成 :  生成当做是翻译问题; 这是比较新的系统，目前还不太好做。把问句转化成内部表示，然后再转化为答句
+            - 云助手一般是第一种，问答系统一般是第二种，聊天机器人一般应用第三种
+        - 多论对话
+            - 自然语言理解
+            - 自然语言生成
+            - 对话管理
+
+- 有这5小段代码在手，轻松实现数据可视化（Python+Matplotlib）
+
+- 一文简述ResNet及其多种变体
+- 资源 | 概率编程工具：TensorFlow Probability官方简介
+    - TensorFlow Probability 适用于以下需求：
+    - 希望建立一个生成数据模型，推理其隐藏进程。
+    - 需要量化预测中的不确定性，而不是预测单个值。
+    - 训练集具有大量相对于数据点数量的特征。
+    - 结构化数据（例如，使用分组，空间，图表或语言语义）并且你想获取其中重要信息的结构。存有一个逆问题 - 请参考 TFDS'18 演讲视频（https://www.youtube.com/watch?v=Bb1_zlrjo1c）以重建测量中的融合等离子体
+
+- 教程 | 简述表征句子的3种无监督深度学习方法
+	- 介绍了三个使用 RNN 创建句子向量表征的无监督方法，并且在解决一个监督任务的过程中展现了它们的效率。
+	- 基线模型 : average word2vec
+	- 自编码器的结果比我们的基线模型要差一些（这可能是因为所用的数据集相对较小的缘故）。
+	- skip-thought 向量模型语言模型都利用语境来预测句子表征，并得到了最佳结果
+
+- ETH-DS3Lab at SemEval-2018 Task 7: Effectively Combining Recurrent and Convolutional Neural Networks for Relation Classification and Extraction
+	- 本文来自苏黎世联邦理工学院 DS3Lab，文章针对实体关系抽取任务进行了非常系统的实验，并在第十二届国际语义评测比赛 SemEval 2018 的语义关系抽取和分类任务上获得冠军。本文思路严谨，值得国内学者们仔细研读。
+- Personalizing Dialogue Agents: I have a dog, do you have pets too?
+	- 本文是 Facebook AI Research 发表于 NIPS 2018 的工作。论文根据一个名为 PERSONA-CHAT 的对话数据集来训练基于 Profile 的聊天机器人，该数据集包含超过 16 万条对话。
+	- 本文致力于解决以下问题：
+		- 聊天机器人缺乏一致性格特征
+		- 聊天机器人缺乏长期记忆
+		- 聊天机器人经常给出模糊的回应，例如 I don't know
+	- 数据集链接
+		- https://github.com/facebookresearch/ParlAI/tree/master/parlai/tasks/personachat
+- DiSAN: Directional Self-Attention Network for RNN/CNN-Free Language Understanding
+	- 本文是悉尼科技大学发表于 AAAI 2018 的工作，这篇文章是对 Self-Attention 的另一种应用，作者提出一种新的方向性的 Attention，从而能更加有效地理解语义。
+	- 代码链接
+		- https://github.com/shaohua0116/Group-Normalization-Tensorflow
+- DetNet: A Backbone network for Object Detection
+	- 本文来自清华大学和 Face++，文章分析了使用 ImageNet 预训练网络调优检测器的缺陷，研究通过保持空间分辨率和扩大感受野，提出了一种新的为检测任务设计的骨干网络 DetNet。
+	- 实验结果表明，基于低复杂度的 DetNet59 骨干网络，在 MSCOCO 目标检测和实例分割追踪任务上都取得当前最佳的成绩。
+- Imagine This! Scripts to Compositions to Videos
+	- Video Caption
+	- 本文以《摩登原始人》的动画片段作为训练数据，对每个片段进行详细的文本标注，最终训练得到一个可以通过给定脚本或文字描述生成动画片段的模型。
+	- 模型称为 Craft，分为布局、实体、背景，三个部分。虽然现阶段模型存在着很多问题，但是这个研究在理解文本和视频图像高层语义方面有着很大的意义。
+
+- Generating Diverse and Accurate Visual Captions by Comparative Adversarial Learning
+	- Image Caption
+	- 本文来自华盛顿大学和微软，文章提出一个基于 GAN 的 Image Caption 框架，亮点如下：
+		- 1. 提出用 comparative relevance score 来衡量 image-text 的质量从而指导模型的训练，并且在训练过程中引入 unrelated captions；
+		- 2. 利用 human evaluations 评估 caption 的 accuracy，给出了和传统的六个评价指标的结果对比；
+		- 3. 提出通过比较 caption feature vectors 的 variance 来评估 caption 的 diversity。
+- Simultaneously Self-Attending to All Mentions for Full-Abstract Biological Relation Extraction
+	- Self-Attention
+	- 本文是 Andrew McCallum 团队应用 Self-Attention 在生物医学关系抽取任务上的一个工作。这篇论文作者提出了一个文档级别的生物关系抽取模型，作者使用 Google 提出包含 Self-Attention 的 transformer 来对输入文本进行表示学习，和原始的 transformer 略有不同在于他们使用了窗口大小为 5 的 CNN 代替了原始 FNN。
+	- 代码链接
+		- https://github.com/patverga/bran
+- Evaluation of Session-based Recommendation Algorithms
+	- Recommender System
+	- 本文系统地介绍了 Session-based Recommendation，主要针对 baseline methods, nearest-neighbor techniques, recurrent neural networks 和 (hybrid) factorization-based methods 等 4 大类算法进行介绍。
+	- 此外，本文使用 RSC15、TMALL、ZALANDO、RETAILROCKET、8TRACKS 、AOTM、30MUSIC、NOWPLAYING、CLEF 等 7 个数据集进行分析，在 Mean Reciprocal Rank (MRR)、Coverage、Popularity bias、Cold start、Scalability、Precision、Recall 等指标上进行比较。
+	- 代码链接
+		- https://www.dropbox.com/sh/7qdquluflk032ot/AACoz2Go49q1mTpXYGe0gaANa?dl=0
+- On the Convergence of Adam and Beyond
+	- Neural Network
+	- 本文是 ICLR 2018 最佳论文之一。在神经网络优化方法中，有很多类似 Adam、RMSprop 这一类的自适应学习率的方法，但是在实际应用中，虽然这一类方法在初期下降的很快，但是往往存在着最终收敛效果不如 SGD+Momentum 的问题。
+	- 作者发现，导致这样问题的其中一个原因是因为使用了指数滑动平均，这使得学习率在某些点会出现激增。在实验中，作者给出了一个简单的凸优化问题，结果显示 Adam 并不能收敛到最优点。
+	- 在此基础上，作者提出了一种改进方案，使得 Adam 具有长期记忆能力，来解决这个问题，同时没有增加太多的额外开销。
+- Neural Baby Talk
+	- Image Captioning
+	- 本文是佐治亚理工学院发表于 CVPR 2018 的工作，文章结合了 image captioning 的两种做法：以前基于 template 的生成方法（baby talk）和近年来主流的 encoder-decoder 方法（neural talk）。
+	- 论文主要做法其实跟作者以前的工作"Knowing When to Look: Adaptive Attention via A Visual Sentinel for Image Captioning"类似：在每一个 timestep，模型决定生成到底是生成 textual word（不包含视觉信息的连接词），还是生成 visual word。其中 visual word 的生成是一个自由的接口，可以与不同的 object detector 对接。
+	- 论文链接
+		- https://www.paperweekly.site/papers/1801
+	- 代码链接
+		- https://github.com/jiasenlu/NeuralBabyTalk
+- Adaptive Graph Convolutional Neural Networks
+	- Graph Convolutional Neural Network
+	- 图卷积神经网络（Graph CNN）是经典 CNN 的推广方法，可用于处理分子数据、点云和社交网络等图数据。Graph CNN 中的的滤波器大多是为固定和共享的图结构而构建的。但是，对于大多数真实数据而言，图结构的大小和连接性都是不同的。
+	- 本论文提出了一种有泛化能力且灵活的 Graph CNN，其可以使用任意图结构的数据作为输入。通过这种方式，可以在训练时为每个图数据构建一个任务驱动的自适应图（adaptive graph）。
+	- 为了有效地学习这种图，作者提出了一种距离度量学习方法。并且在九个图结构数据集上进行了大量实验，结果表明本文方法在收敛速度和预测准确度方面都有更优的表现。
+
+- (***)基于CNN的阅读理解式问答模型：DGCNN
+	-  Dilate Gated Convolutional Neural Network
+	- Ref : 一文读懂「Attention is All You Need」| 附代码实现
+	- 本模型——我称之为 DGCNN——是基于 CNN 和简单的 Attention 的模型，由于没有用到 RNN 结构，因此速度相当快，而且是专门为这种 WebQA 式的任务定制的，因此也相当轻量级。
+	- SQUAD 排行榜前面的模型，如 AoA、R-Net 等，都用到了 RNN，并且还伴有比较复杂的注意力交互机制，而这些东西在 DGCNN 中基本都没有出现。
+	- 这是一个在 GTX1060 上都可以几个小时训练完成的模型！
+	- CIPS-SOGOU/WebQA
+
+-WebQA
+	-  WebQA 的参考论文 Dataset and Neural Recurrent Sequence Labeling Model for Open-Domain Factoid Question :
+	- 1. 直接将问题用 LSTM 编码后得到“问题编码”，然后拼接到材料的每一个词向量中；
+	- 2. 人工提取了 2 个共现特征；
+	- 3. 将最后的预测转化为了一个序列标注任务，用 CRF 解决。
+
+- Semantic Segmentation PyTorch
+- Pytorch NLP
+- Non-local Neural Networks for Video Classification
+	- Facebook视频分类开源代码
+- Keras Project Template
+	- Keras项目模板
+	- 本项目是一个基于 Keras 库的项目模板，模板能让你更容易地构建和训练深度学习模型，并支持 Checkpoints 和 TensorBoard。
+	- https://github.com/Ahmkel/Keras-Project-Template
+- Agriculture KnowledgeGraph
+	- 面向智慧农业的知识图谱及其应用系统
+- 《迁移学习简明手册》
+- MobilePose
+	- 支持移动设备的单人姿态估计框架
+- Meka
+	- 多标签分类器和评价器
+	- MEKA 是一个基于 Weka 机器学习框架的多标签分类器和评价器。本项目提供了一系列开源实现方法用于解决多标签学习和评估。
+- Quick NLP
+	- Quick NLP 是一个基于深度学习的自然语言处理库，该项目的灵感来源于 Fast.ai 系列课程。它具备和 Fast.ai 同样的接口，并对其进行扩展，使各类 NLP 模型能够更为快速简单地运行。
+
+
+
+- 从字符级的语言建模开始，了解语言模型与序列建模的基本概念
+- 一文读懂机器学习需要哪些数学知识(附全套优秀课程的网盘链接资源)
+- 机器之心GitHub项目：从循环到卷积，探索序列建模的奥秘
+	- 这是机器之心 GitHub 实现项目的第四期，前面几期分别介绍了卷积神经网络、生成对抗网络与带动态路由的 CapsNet。
+
 <<<<<<< HEAD
 - KNN与K-Means的区别
 	- https://www.tuicool.com/articles/qamYZv
