@@ -76,6 +76,8 @@
     + https://en.wikipedia.org/wiki/Brown_Corpus
 + 大型英语单词示例：Google 1 Billion Word Corpus
     + https://github.com/ciprian-chelba/1-billion-word-language-modeling-benchmark
++ Microsoft Research entence Completion Challenge dataset
+	+ SOTA  : A fast and simple algorithm for training neural probabilistic language models
 
 ### 3. 图像字幕（Image Captioning）
 图像字幕是为给定图像生成文字描述的任务。
