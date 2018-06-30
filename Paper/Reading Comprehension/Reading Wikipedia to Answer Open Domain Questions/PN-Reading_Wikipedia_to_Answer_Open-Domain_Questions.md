@@ -1,5 +1,5 @@
-+ #Reading Wikipedia to Answer Open-Domain Quesitons
-+ ## Abstract
+# Reading Wikipedia to Answer Open-Domain Quesitons
+## Abstract
 + This paper proposes to tackle open-domain question answering using Wikipedia as the unique knowledge source: the answer to any factoid question is a text span in a Wikipedia article.(问题的答案是维基百科中文本按照一定跨度截取)
 + This task of machine reading at scale combines the challenges of document re-trieval (finding the relevant articles) with that of machine comprehension of text (identifying the answer spans from those articles)
 	+ 大规模机器阅读的任务将文件重新找到（找到相关文章）和机器理解文本（识别这些文章的答案）的挑战相结合
@@ -7,7 +7,8 @@
 + Our experiments on multiple existing QA datasets indicate that:
 	+ (1) both modules are highly competitive with respect to existing counterparts(现有的同行)
 	+ (2) multitask learning using distant supervision（远距离监督） on their combination is an effective complete system on this challenging task.
-+ ## Introduction
+
+## Introduction
 + This paper considers the problem of answering factoid questions in an open-domain setting using Wikipedia as the unique knowledge source,such as one does when looking for answers in an encyclopedia(百科全书)
 + Wikipedia is a constantly evolving source（不断发展的信息源） of detailed information that could facilitate intelligent machines — if they are able to leverage（利用） its power
 + Unlike knowledge bases (KBs) such as Freebase (Bollacker et al., 2008) or DBPedia (Auer et al., 2007), which are easier for computers to process but too **sparsely populated（人口稀少）** for open-domain question answering
@@ -51,7 +52,7 @@
 	+ Finally, our full system is evaluated using multiple benchmarks. In particular, we show that performance is improved across all datasets through the use of **multitask learning** and **distant supervision** compared to single task training.
 
 
-+ ## Related Work
+## Related Work
 + Open-domain QA Define
 	+ Open-domain QA was originally defined as finding answers in collections of unstructured documents, following the setting of the annual TREC competitions
 		+ TREC competitions
@@ -94,7 +95,7 @@
 
 
 
-+ ## Our System:DrQA
+## Our System:DrQA
 + In the following we describe our system DrQA for MRS which consists of two components:
 	+ (1) the Document Retriever module for finding relevant articles
 	+ (2) a machine comprehension model, Document Reader, for extracting answers from a single document or a small collection of documents.
@@ -176,23 +177,23 @@ $P start (i) × P end (i 0 )$ is maximized
 		+ *Multi paragraph*
 			+ **Multi Paragraphs(single docs and multi docs) result contrast : ** To make scores compatible across paragraphs in one or several retrieved documents, we use the unnormalized exponential and take argmax over all considered paragraph spans for our final prediction.(我们使用非规范化的指数，并对所有考虑的段跨度进行最终预测的argmax)
 
-+ ## Data
-	+ Wikipedia
-		+ Knowledge source
-	+ SQuAD
-		+ train data
-			+ EM
-			+ F1
-	+ three more data QA dataset
-		+ CuratedTREC
-		+ WebQuestions
-		+ WikiMovies
-	+ Distantly Supervised Data
-		+ All the QA datasets presented above contain train-ing portions, but CuratedTREC, WebQuestions and WikiMovies only contain question-answer pairs, and not an associated document or paragraph as in SQuAD, and hence cannot be used for training Document Reader directly. 
-		+ Following previous work on distant supervision (DS) for relation extraction (Mintz et al., 2009), we use a procedure to automatically associate paragraphs to such training examples, and then add these examples to our training set.
-+ ## Experiments
-	+ Finding Rlevant Articles
-	+ Reader Evaluation on SQuAD
-		+ We use 3-layer bidirectional LSTMs with h = 128 hidden units for both paragraph and question encoding. We apply the Stanford CoreNLP toolkit (Manning et al., 2014) for tokenization and also generatin
-	+ Full Wikipedia Question Answering
-+ ## Conslusion
+## Data
++ Wikipedia
+	+ Knowledge source
++ SQuAD
+	+ train data
+		+ EM
+		+ F1
++ three more data QA dataset
+	+ CuratedTREC
+	+ WebQuestions
+	+ WikiMovies
++ Distantly Supervised Data
+	+ All the QA datasets presented above contain train-ing portions, but CuratedTREC, WebQuestions and WikiMovies only contain question-answer pairs, and not an associated document or paragraph as in SQuAD, and hence cannot be used for training Document Reader directly. 
+	+ Following previous work on distant supervision (DS) for relation extraction (Mintz et al., 2009), we use a procedure to automatically associate paragraphs to such training examples, and then add these examples to our training set.
+## Experiments
++ Finding Rlevant Articles
++ Reader Evaluation on SQuAD
+	+ We use 3-layer bidirectional LSTMs with h = 128 hidden units for both paragraph and question encoding. We apply the Stanford CoreNLP toolkit (Manning et al., 2014) for tokenization and also generatin
++ Full Wikipedia Question Answering
+## Conslusion

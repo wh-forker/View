@@ -1,6 +1,6 @@
 # Data-list
 ## Reference
-+ 25个深度学习开源数据集，good luck !
++ 25个深度学习开源数据集，good luck !(SOTA)
 + https://machinelearningmastery.com/datasets-natural-language-processing/
 + 阅读理解与问答数据集 https://zhuanlan.zhihu.com/p/30308726
 + https://www.quora.com/Datasets-How-can-I-get-corpus-of-a-question-answering-website-like-Quora-or-Yahoo-Answers-or-Stack-Overflow-for-analyzing-answer-quality
