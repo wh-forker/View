@@ -221,6 +221,21 @@
     + Datasets: How can I get corpus of a question-answering website like Quora or Yahoo Answers or Stack Overflow for analyzing answer quality?
         https://www.quora.com/Datasets-How-can-I-get-corpus-of-a-question-answering-website-like-Quora-or-Yahoo-Answers-or-Stack-Overflow-for-analyzing-answer-quality
 
++ Looking Beyond the surface: A Chanllenge Set for Reading Comprehension over Multiple Sentences
+	+ 特点:
+		+ 多选题
+		+ 问题的答案来自篇章中的多条语句
+		+ 数据集来自7个不同的领域
+	+ 基准算法:
+		+ Random
+		+ IR
+		+ SurfaceIR
+		+ SemanticLP
+		+ BiDAF
+	+ SOTA
+		+ SurfaceIR 结构的F1 值 相较人类结果 差 20个百分点
+
+
 ### 6. 语音识别（Speech Recognition）
 + 语音识别就是将口语语言的录音转换成人类可读的文本。
 + 新手:TIMIT Acoustic-Phonetic Continuous Speech Corpus
