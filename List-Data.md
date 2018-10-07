@@ -1,11 +1,11 @@
 # Data-list
-## Reference
+### Reference
 + 25个深度学习开源数据集，good luck !(SOTA)
 + https://machinelearningmastery.com/datasets-natural-language-processing/
 + 阅读理解与问答数据集 https://zhuanlan.zhihu.com/p/30308726
 + https://www.quora.com/Datasets-How-can-I-get-corpus-of-a-question-answering-website-like-Quora-or-Yahoo-Answers-or-Stack-Overflow-for-analyzing-answer-quality
 
-## NLP-Basic
+### NLP-Basic
 + IMDB Reviews
 	+ 这是一个电影爱好者的梦寐以求的数据集。它意味着二元情感分类，并具有比此领域以前的任何数据集更多的数据。除了训练和测试评估示例之外，还有更多未标记的数据可供使用。包括文本和预处理的词袋格式。
 	+ 大小：80 MB
@@ -50,7 +50,7 @@
 	+ 记录数量：681,288个帖子，超过1.4亿字
 	+ SOTA:Character-level and Multi-channel Convolutional Neural Networks for Large-scale Authorship Attribution
 
-## Tasks
+### Tasks
 ### 1. 文本分类（Text Classification）
 文本分类指的是标记句子或者文档，比如说垃圾邮件分类和情感分析。
 以下是一些对于新手而言非常棒的文本分类数据集：
@@ -273,6 +273,11 @@
         + icwb2
             + http://sighan.cs.uchicago.edu/bakeoff2005/data/icwb2-data.rar
 
-## others
+### Ranking
++ [LETOR, ](http://blog.crackcell.com/posts/2011/12/17/a_short_intro_2_ltr.html#sec-7)<http://research.microsoft.com/en-us/um/beijing/projects/letor/>
++ Microsoft Learning to Rank Dataset, <http://research.microsoft.com/en-us/projects/mslr/>
++ Yahoo Learning to Rank Challenge, <http://webscope.sandbox.yahoo.com/>
+
+### others
 + 中文文本语料库整理（不定时更新2015-10-24）
 
